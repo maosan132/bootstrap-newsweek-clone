@@ -4,6 +4,10 @@
 body {
   font-family: 'Roboto Condensed', sans-serif;
 }
-
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+}
 /* font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Lora', serif;*/
