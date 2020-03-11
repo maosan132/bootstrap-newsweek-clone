@@ -12,7 +12,9 @@
   font-weight: bolder;
   float: right;
 }
-
+.position-sticky {
+  top:0;
+}
 .category{
   bottom:0;
   left:0"
