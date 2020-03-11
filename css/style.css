@@ -1,0 +1,24 @@
+.debate1,
+.debate2 {
+  top: -35px;
+  right: 10px
+}
+.debate-1-divisor {
+  border-top: 4px solid #ff0000;
+}
+
+.debate-bottom-divisor {
+  border-top: 4px double grey;
+}
+
+.debate-2-divisor {
+  border-top: 4px solid #1c87fb;
+}
+
+.vs div {
+  width: 40px;
+  height: 40px;
+  font: bold 14px/40px "Roboto Condensed", sans-serif;
+  text-align: center;
+  margin: 14px auto 18px;
+}

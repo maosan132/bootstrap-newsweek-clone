@@ -2,16 +2,19 @@ img {
   background-size: cover;
   background-position: 50%;
 }
-.avatar1 {
+.avatar1,
+.debate1 {
   background: url(../images/face_shey.svg);
   background-size: 63px 63px;
   height: 63px;
   width: 63px;
 }
 
-.avatar2 {
+.avatar2,
+.debate2 {
   background: url(../images/face_mao.svg);
   background-size: 63px 63px;
   height: 63px;
   width: 63px;
 }
+,debate
