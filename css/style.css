@@ -1,3 +1,11 @@
+.suscribe::after {
+  content: "  〉";
+  font-weight: bolder;
+}
+.category{
+  bottom:0;
+  left:0"
+}
 .debate1,
 .debate2 {
   top: -35px;
