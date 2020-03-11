@@ -3,10 +3,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
 body,
 .related p,
-p.info {
+p.info,
+.summary {
   font-family: 'Roboto Condensed', sans-serif;
-
 }
+
+.heading {
+  cursor: pointer;
+  font: 20px/22px "Lora",serif;
+  margin-bottom: 10px;
+}
+
 p {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.4;
