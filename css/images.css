@@ -1,4 +1,17 @@
 img {
-    background-size: cover;
-    background-position: 50%;
+  background-size: cover;
+  background-position: 50%;
+}
+.avatar1 {
+  background: url(../images/face_shey.svg);
+  background-size: 63px 63px;
+  height: 63px;
+  width: 63px;
+}
+
+.avatar2 {
+  background: url(../images/face_mao.svg);
+  background-size: 63px 63px;
+  height: 63px;
+  width: 63px;
 }
