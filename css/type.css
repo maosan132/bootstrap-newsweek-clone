@@ -10,7 +10,20 @@ p.info,
 .lastests {
   font-family: 'Roboto Condensed', sans-serif;
 }
+#navbarContent li a {
+  color: #000;
+  text-decoration: none;
+}
 
+#navbarContent li a:hover {
+  color: #fff;
+  background: #000;
+}
+
+a.dfg{
+  color: #000;
+  text-decoration: none;
+}
 .more-stories {
   letter-spacing: 1px;
 }
@@ -33,7 +46,8 @@ p {
   font-size: 14px;
 }
 a h4:hover,
-.more-stories:hover{
+.more-stories:hover
+{
   text-decoration: underline #f72210;
   cursor: pointer;
 }
@@ -47,7 +61,8 @@ a h4:hover,
 
 .related p:hover,
 a.info:hover,
-.lastests:hover {
+.lastests:hover,
+#navbarNav li a:hover {
   color: #ff0000!important;
   cursor: pointer;
 } 
