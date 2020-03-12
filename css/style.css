@@ -2,6 +2,7 @@
   content: "  〉";
   font-weight: bolder;
 }
+
 #navbarContent li a::before {
   content: "   ";
   white-space: pre;
@@ -11,6 +12,10 @@
   content: "  〉";
   font-weight: bolder;
   float: right;
+}
+
+.title {
+  cursor: pointer;
 }
 
 .category{
@@ -50,6 +55,9 @@
   padding: 20px;
 }
 
+.nw-n {
+  line-height: 1;
+}
 @media only screen and (min-width: 768px) {
   .sticky1,
   .sticky3 {
