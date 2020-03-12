@@ -19,8 +19,12 @@ p.info,
   letter-spacing: -2px;
 }
 
+.logo-mini {
+  font-size: 2em;
+}
+
 .footer-logo {
-  font-size: 3rem;;
+  font-size: 3rem;
 }
 
 #navbarContent li a {
