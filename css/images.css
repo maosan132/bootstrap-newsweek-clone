@@ -18,8 +18,33 @@ img {
   width: 63px;
 }
 
-.newsletter {
-  width: 200px;
-  background-position: 50%;
+.newsletter2 {
   background-size: cover ;
+  
+}
+
+@media only screen and (max-width: 576px) {
+  .newsletter{
+
+  }
+}
+@media only screen and (min-width: 576px) {
+  .newsletter{
+
+  }
+}
+@media only screen and (min-width: 768px) {
+  .newsletter{
+
+  }
+}
+@media only screen and (min-width: 992px) {
+  .newsletter{
+
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .newsletter{
+
+  }
 }

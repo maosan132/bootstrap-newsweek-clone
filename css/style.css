@@ -62,7 +62,10 @@ img.cloud-icon::after {
 .overlapped {
   top:10px;
   left: 100px;
+}
 
+.bg {
+  background: darkred;
 }
 
 @media only screen and (min-width: 768px) {
