@@ -1,6 +1,9 @@
 img {
   background-size: cover;
   background-position: 50%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .avatar1,
 .debate1 {
