@@ -1,5 +1,6 @@
 .suscribe-btn::after {
   content: "  〉";
+  white-space: pre;
   font-weight: bolder;
 }
 
@@ -7,10 +8,15 @@
   content: "   ";
   white-space: pre;
 }
-
-#navbarContent li a::after{
+img.cloud-icon::after {
+  display: inline-block;
+  content: "   ";
+  white-space: pre;
+}
+#navbarContent li a::after, .country::after{
   content: "  〉";
   font-weight: bolder;
+  white-space: pre;
   float: right;
 }
 

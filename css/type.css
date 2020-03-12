@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
 
 body,
 .related p,
@@ -11,6 +11,18 @@ p.info,
 .featured-2 {
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+.logo-mini,
+.logo-big,
+.footer-logo {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: -2px;
+}
+
+.footer-logo {
+  font-size: 3rem;;
+}
+
 #navbarContent li a {
   color: #000;
   text-decoration: none;
