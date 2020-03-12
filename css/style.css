@@ -1,4 +1,4 @@
-.suscribe::after {
+.suscribe-btn::after {
   content: "  〉";
   font-weight: bolder;
 }
