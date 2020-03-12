@@ -1,0 +1,11 @@
+.suscribe-btn::after,
+.suscribe .btn::after
+ {
+  content: " 〉";
+  white-space: pre;
+  font-weight: bolder;
+}
+
+.btn-danger {
+  background-color: #ff0000!important;
+}

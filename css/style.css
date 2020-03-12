@@ -1,9 +1,3 @@
-.suscribe-btn::after {
-  content: "  〉";
-  white-space: pre;
-  font-weight: bolder;
-}
-
 #navbarContent li a::before {
   content: "   ";
   white-space: pre;
@@ -64,6 +58,13 @@ img.cloud-icon::after {
 .nw-n {
   line-height: 1;
 }
+
+.overlapped {
+  top:10px;
+  left: 100px;
+
+}
+
 @media only screen and (min-width: 768px) {
   .sticky1,
   .sticky3 {
