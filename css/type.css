@@ -37,10 +37,10 @@ p.info,
   background: #000;
 }
 
-a.dfg{
-  color: #000;
-  text-decoration: none;
+h4 {
+  line-height:1;
 }
+
 .more-stories {
   letter-spacing: 1px;
 }
