@@ -58,7 +58,7 @@ a.dfg{
 }
 
 p {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
   font-size: 14px;
 }
@@ -89,3 +89,9 @@ a.info:hover,
   color: #ff0000!important;
   cursor: pointer;
 } 
+
+footer a {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  font-size: 14px;
+}
