@@ -7,11 +7,18 @@ img.cloud-icon::after {
   content: "   ";
   white-space: pre;
 }
-#navbarContent li a::after, .country::after {
+
+#navbarContent li a::after,
+.country::after {
   content: "  〉";
   font-weight: bolder;
   white-space: pre;
   float: right;
+}
+
+h4.issue::after {
+  content: " 〉";
+  font-weight: bolder;
 }
 
 li.nav-li-separator {
@@ -37,11 +44,11 @@ footer {
   cursor: pointer;
 }
 
-.category{
+.category,
+.last-magazine {
   bottom:0;
   left:0"
-}
-
+}7
 .debate1,
 .debate2 {
   top: -35px;
@@ -89,7 +96,7 @@ footer {
 
 footer i,
 .search i {
-  font-size: 1.5em;
+  font-size: 1.4em;
   opacity: 0.7;
   cursor: pointer;
 }
