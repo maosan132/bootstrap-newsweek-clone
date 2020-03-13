@@ -5,6 +5,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
 }
+
 .avatar1,
 .debate1 {
   height: 63px;
@@ -18,5 +19,5 @@ img {
 }
 
 .newsletter2 {
-  background-size: cover ;  
+  background-size: cover;
 }

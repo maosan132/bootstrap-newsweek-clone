@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
 body,
 .related p,
 p.info,
@@ -46,6 +52,7 @@ footer a {
 h4 {
   line-height: 1;
 }
+
 .stories .summary {
   font-family: Arial, sans-serif;
   font-size: 15px;
@@ -61,6 +68,14 @@ h4 {
   letter-spacing: 1px;
 }
 
+.related p,
+.more-stories,
+.lastests,
+.featured-2 {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
 a h4:hover,
 .more-stories:hover {
   text-decoration: underline #f72210;
@@ -69,20 +84,6 @@ a h4:hover,
 
 .featured {
   font-size: 20px;
-  line-height: 1.3;
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.4;
-  font-size: 14px;
-}
-
-.related p,
-.more-stories,
-.lastests,
-.featured-2 {
-  font-size: 16px;
   line-height: 1.3;
 }
 
