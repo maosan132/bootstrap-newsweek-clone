@@ -2,9 +2,14 @@
   content: "   ";
   white-space: pre;
 }
-img.cloud-icon::after {
+
+i.cloud-icon {
+bottom: 7px;
+}
+
+i.cloud-icon::after {
   display: inline-block;
-  content: "   ";
+  content: " ";
   white-space: pre;
 }
 
@@ -48,7 +53,8 @@ footer {
 .last-magazine {
   bottom:0;
   left:0"
-}7
+}
+
 .debate1,
 .debate2 {
   top: -35px;
