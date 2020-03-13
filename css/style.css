@@ -21,6 +21,15 @@ i.cloud-icon::after {
   float: right;
 }
 
+.decoration {
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 15px;
+  border-left: 12px solid white;
+  border-top: 13px solid #ff0000;
+}
+
 h4.issue::after {
   content: " 〉";
   font-weight: bolder;
