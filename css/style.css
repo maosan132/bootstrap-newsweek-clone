@@ -27,7 +27,7 @@ i.cloud-icon::after {
   width: 70px;
   height: 15px;
   border-left: 12px solid white;
-  border-top: 13px solid #ff0000;
+  border-top: 13px solid #f00;
 }
 
 h4.issue::after {
