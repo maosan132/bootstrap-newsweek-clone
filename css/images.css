@@ -20,29 +20,3 @@ img {
 .newsletter2 {
   background-size: cover ;  
 }
-
-@media only screen and (max-width: 576px) {
-  .newsletter{
-
-  }
-}
-@media only screen and (min-width: 576px) {
-  .newsletter{
-
-  }
-}
-@media only screen and (min-width: 768px) {
-  .newsletter{
-
-  }
-}
-@media only screen and (min-width: 992px) {
-  .newsletter{
-
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .newsletter{
-
-  }
-}

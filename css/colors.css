@@ -1,19 +1,19 @@
 .bg-danger {
-  background-color: #ff0000!important;
+  background-color: #f00 !important;
 }
 
 .text-danger {
-  color: #ff0000!important;
+  color: #f00 !important;
 }
 
 .bg-negro {
   background-color: #000;
 }
-  
+
 .text-negro {
   color: #000;
 }
-  
+
 .bg-lightgray {
   background-color: rgb(238, 238, 238);
 }
@@ -25,7 +25,7 @@
 .bg-nw-lightgray {
   background-color: rgba(3, 3, 3, 0.4);
 }
-    
+
 .text-nw-lightgray {
   color: rgba(3, 3, 3, 0.4);
 }
@@ -33,7 +33,7 @@
 .bg-nw-lightwhite {
   background-color: rgba(255, 255, 255, 0.7);
 }
-    
+
 .text-nw-lightwhite {
   color: rgba(255, 255, 255, 0.7);
 }
