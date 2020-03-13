@@ -18,14 +18,15 @@
 
 <body>
 
-  <div class="container-xl border-top">
-    <div class=" sticky-top">
+  <div class="container-xl border-top sticky-top">
+    <div class="">
       <div class="navbar navbar-expand-lg navbar-light bg-danger row">
 
         <div class="col-auto logo-mini text-white order-0 d-lg-none font-weight-bold">Newsweek</div>
 
         <div class="col weather-widget order-0 d-flex flex-column p-2 p-lg-3">
-          <a href="" class="text-white font-weight-bold d-flex align-items-end"><i class="cloud-icon fas fa-cloud-sun position-relative"></i> 30° <span
+          <a href="" class="text-white font-weight-bold d-flex align-items-end"><i
+              class="cloud-icon fas fa-cloud-sun position-relative"></i> 30° <span
               class="country d-none d-sm-inline-block"> Cali, CO</span></a>
           <span class="date text-white d-none d-lg-block">Tue, Wed 04, 2020</span>
         </div>
@@ -40,7 +41,7 @@
 
         <div class="col-auto top-links order-3 pl-3 pt-3 pb-2 pr-0 d-none d-lg-block align-self-end"><a href=""
             class="signin btn text-white rounded-0 p-1 font-weight-bold mr-2">SIGN IN </a><a href=""
-            class="suscribe-btn btn btn-light text-danger-0 p-0 px-1 pl-2 font-weight-bold rounded-0">SUBSCRIBE</a>
+            class="suscribe-btn btn btn-light text-danger p-0 px-1 pl-2 font-weight-bold rounded-0">SUBSCRIBE</a>
         </div>
 
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarContent"
@@ -91,6 +92,8 @@
             <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Weather</a></li>
           </ul>
           <span class="col-auto search mr-5 text-nw-lightgray">Search <i class="fas fa-search"></i></span>
+          <div style="top:0;right:0;width:70px;height:15px;border-left: 12px solid white;
+          border-top: 13px solid #ff0000;" class="d-inline-block decoration bg-danger position-absolute pr-0"></div>
         </div>
       </nav>
     </div>
@@ -103,11 +106,29 @@
         <div class="col-md-12 col-lg-8">
           <div class="row">
             <div class="col-md-5 sticky1 position-sticky">
+              <div class="d-block d-md-none">
+                <div class="title pb-2 font-weight-bold text-nw-lightgray">TOP-STORY</div>
+                <article>
+                  <a href="#" class="text-dark text-decoration-none">
+                    <div class="d-flex position-relative">
+                      <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold"> U.S.
+                      </div><div class=" border border-primary p-1 bg-danger">
+                      <img class="img-fluid border border-warning" src='https://placehold.it/767x512/2471a3?text=TOP-STORY'
+                        alt='some content' /></div>
+                    </div>
+                    <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
+                      Election</h4>
+                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
+                      voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid pariatur quidem
+                      assumenda temporibus alias deleniti.</p>
+                  </a>
+                </article>
+              </div>
               <div class="title pb-2 font-weight-bold text-nw-lightgray">FEATURED STORIES</div>
               <article>
                 <a href="#" class="text-dark text-decoration-none">
                   <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
+                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">WORLD
                     </div>
                     <img class="img-fluid" src='https://placehold.it/767x512/7dcea0?text=Featured1'
                       alt='some content' />
@@ -142,7 +163,7 @@
               <article>
                 <a href="#" class="text-dark text-decoration-none">
                   <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
+                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">U.S.
                     </div>
                     <img class="img-fluid" src='https://placehold.it/767x512/2c3e50?text=Featured3'
                       alt='some content' />
@@ -157,7 +178,7 @@
               <article>
                 <a href="#" class="text-dark text-decoration-none">
                   <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
+                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">WORLD
                     </div>
                     <img class="img-fluid" src='https://placehold.it/767x512/85c1e9?text=Featured4'
                       alt='some content' />
@@ -171,22 +192,24 @@
               </article>
             </div>
             <div class="col-md-7 sticky2">
-              <div class="title pb-2 font-weight-bold text-nw-lightgray">TOP-STORY</div>
-              <article>
-                <a href="#" class="text-dark text-decoration-none">
-                  <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold"> U.S.
+              <div class="d-none d-md-block">
+                <div class="title pb-2 font-weight-bold text-nw-lightgray">TOP-STORY</div>
+                <article>
+                  <a href="#" class="text-dark text-decoration-none">
+                    <div class="d-flex position-relative">
+                      <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold"> U.S.
+                      </div><div class=" border border-primary p-1 bg-danger">
+                      <img class="img-fluid border border-warning" src='https://placehold.it/767x512/2471a3?text=TOP-STORY'
+                        alt='some content' /></div>
                     </div>
-                    <img class="img-fluid" src='https://placehold.it/767x512/2471a3?text=TOP-STORY'
-                      alt='some content' />
-                  </div>
-                  <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
-                    Election</h4>
-                  <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-                    voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid pariatur quidem
-                    assumenda temporibus alias deleniti.</p>
-                </a>
-              </article>
+                    <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
+                      Election</h4>
+                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
+                      voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid pariatur quidem
+                      assumenda temporibus alias deleniti.</p>
+                  </a>
+                </article>
+              </div>
               <div class="title pb-2 font-weight-bold text-nw-lightgray">CULTURE & TRAVEL</div>
               <div class="row culture">
                 <div class="col-md-4">
@@ -212,7 +235,8 @@
                     <img class="img-fluid" src='https://placehold.it/767x767/FF80AB?text=NETFLIX' alt='some content' />
                   </div>
                   <div>
-                    <div class="heading text-secondary pt-2 pb-1">'Restaurants on the Edge': Hosts Dish About New Netflix
+                    <div class="heading text-secondary pt-2 pb-1">'Restaurants on the Edge': Hosts Dish About New
+                      Netflix
                       Show
                     </div>
                     <p class="summary text-nw-lightgray">Netflix's new food and travel docuseries spans the globe as it
@@ -385,11 +409,11 @@
 
         <div class="col-lg-4 aside sticky3 position-sticky">
           <div class="row opinion">
-            <div class="title pb-2 font-weight-bold text-nw-lightgray">OPINION</div>
-            <ul class="list-unstyled">
+            <div class="col-12 title pb-2 font-weight-bold text-nw-lightgray">OPINION</div>
+            <ul class="col-12 list-unstyled">
               <li class="row">
-                <div class=" col-auto mr-n3"><a href="#"><img class="avatar1 img-fluid rounded-circle float-left" src='images/face_shey.svg'
-                      alt='some content' /></a></div>
+                <div class=" col-auto mr-n3"><a href="#"><img class="avatar1 img-fluid rounded-circle float-left"
+                      src='images/face_shey.svg' alt='some content' /></a></div>
                 <div class="col-10 col-lg-9">
                   <a href="#" class="info font-weight-bold text-reset text-decoration-none">
                     In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
@@ -398,8 +422,8 @@
               </li>
               <li class="dropdown-divider"></li>
               <li class="row">
-                <div class="col-auto mr-n3"><a href="#"><img class="avatar2 img-fluid rounded-circle float-left" src="images/face_mao.svg"
-                      alt='some content' /></a></div>
+                <div class="col-auto mr-n3"><a href="#"><img class="avatar2 img-fluid rounded-circle float-left"
+                      src="images/face_mao.svg" alt='some content' /></a></div>
                 <div class="col-9">
                   <a href="#" class="info font-weight-bold text-reset text-decoration-none">
                     In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
@@ -408,8 +432,8 @@
               </li>
               <li class="dropdown-divider"></li>
               <li class="row">
-                <div class="col-auto mr-n3"><a href="#"><img class="avatar1 img-fluid rounded-circle float-left" src="images/face_shey.svg"
-                      alt='some content' /></a></div>
+                <div class="col-auto mr-n3"><a href="#"><img class="avatar1 img-fluid rounded-circle float-left"
+                      src="images/face_shey.svg" alt='some content' /></a></div>
                 <div class="col-9">
                   <a href="#" class="info font-weight-bold text-reset text-decoration-none">
                     In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
@@ -418,8 +442,8 @@
               </li>
               <li class="dropdown-divider"></li>
               <li class="row">
-                <div class="col-auto mr-n3"><a href="#"><img class="avatar2 img-fluid rounded-circle float-left" src="images/face_mao.svg"
-                      alt='some content' /></a></div>
+                <div class="col-auto mr-n3"><a href="#"><img class="avatar2 img-fluid rounded-circle float-left"
+                      src="images/face_mao.svg" alt='some content' /></a></div>
                 <div class="col-9">
                   <a href="#" class="info font-weight-bold text-reset text-decoration-none">
                     In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
@@ -428,8 +452,8 @@
               </li>
               <li class="dropdown-divider"></li>
               <li class="row">
-                <div class="col-auto mr-n3"><a href="#"><img class="avatar1 img-fluid rounded-circle float-left" src="images/face_shey.svg"
-                      alt='some content' /></a></div>
+                <div class="col-auto mr-n3"><a href="#"><img class="avatar1 img-fluid rounded-circle float-left"
+                      src="images/face_shey.svg" alt='some content' /></a></div>
                 <div class="col-9">
                   <a href="#" class="info font-weight-bold text-reset text-decoration-none">
                     In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
@@ -438,8 +462,8 @@
               </li>
               <li class="dropdown-divider"></li>
               <li class="row">
-                <div class="col-auto mr-n3"><a href="#"><img class="avatar2 img-fluid rounded-circle float-left" src="images/face_mao.svg"
-                      alt='some content' /></a></div>
+                <div class="col-auto mr-n3"><a href="#"><img class="avatar2 img-fluid rounded-circle float-left"
+                      src="images/face_mao.svg" alt='some content' /></a></div>
                 <div class="col-9">
                   <a href="#" class="font-weight-bold text-reset text-decoration-none info">
                     In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
@@ -448,7 +472,7 @@
               </li>
 
             </ul>
-            <div class="title pb-2 font-weight-bold text-nw-lightgray">THE DEBATE</div>
+            <div class="col-12 title pb-2 font-weight-bold text-nw-lightgray">THE DEBATE</div>
             <div class="debate-1-divisor col-11 pt-3 mx-3 pb-0"></div>
             <div class="row px-3 align-items-center pt-0 mt-n3">
               <div class="col-auto"><img class="img-fluid float-left"
@@ -585,10 +609,13 @@
         <div class="row">
           <article class="col-md-3 mb-1">
             <a href="#" class="text-dark text-decoration-none">
-              
+
               <div class="pb-0 position-relative">
-                <span class="last-magazine bg-nw-lightwhite p-2 px-2 text-negro font-weight-bolder position-absolute">MARCH 13 ISSUE</span>
-                <img class="img-fluid" src="https://placehold.it/480x550/99ff33?text=Magazine" alt="some content">
+                <span
+                  class="last-magazine bg-nw-lightwhite p-2 px-2 text-negro font-weight-bolder position-absolute">MARCH
+                  13 ISSUE</span>
+                  <img class="img-fluid d-none d-lg-block" src="https://placehold.it/480x550/99ff33?text=Magazine" alt="some content">
+                  <img class="img-fluid d-block d-lg-none" src="https://placehold.it/550x550/99ff33?text=Magazine" alt="some content">
               </div>
               <h4 class="featured issue font-weight-bolder pt-1 text-uppercase text-center">SEE ALL FEATURES</h4>
             </a>
@@ -661,10 +688,12 @@
           </article>
           <article class="col-md-3 mb-1">
             <a href="#" class="text-dark text-decoration-none">
-              
+
               <div class="pb-0 position-relative">
-                <span class="last-magazine bg-danger p-1 px-2 text-white font-weight-bolder position-absolute">IN FOCUS</span>
-                <img class="img-fluid" src="https://placehold.it/480x550/006666?text=Magazine" alt="some content">
+                <span class="last-magazine bg-danger p-1 px-2 text-white font-weight-bolder position-absolute">IN
+                  FOCUS</span>
+                  <img class="img-fluid d-none d-lg-block" src="https://placehold.it/480x550/006666?text=Magazine" alt="some content">
+                  <img class="img-fluid d-block d-lg-none" src="https://placehold.it/550x550/006666?text=Magazine" alt="some content">
               </div>
               <h4 class="featured font-weight-bolder pt-1 text-uppercase">Look Out Below!</h4>
             </a>
@@ -792,7 +821,9 @@
             <a href="#" class="text-dark text-decoration-none">
               <div class="d-flex position-relative">
                 <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger"><div class="m-1 border px-1"> 15</div></div>
+                  <div class=" border text-danger">
+                    <div class="m-1 border px-1"> 15</div>
+                  </div>
                 </div>
                 <img class="img-fluid" src="https://placehold.it/767x512/bbdefb?text=Slideshow" alt="some content">
               </div>
@@ -804,7 +835,9 @@
             <a href="#" class="text-dark text-decoration-none">
               <div class="d-flex position-relative">
                 <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger"><div class="m-1 border px-1">11</div></div>
+                  <div class=" border text-danger">
+                    <div class="m-1 border px-1">11</div>
+                  </div>
                 </div>
                 <img class="img-fluid" src="https://placehold.it/767x512/64b5f6?text=Slideshow" alt="some content">
               </div>
@@ -817,7 +850,9 @@
             <a href="#" class="text-dark text-decoration-none">
               <div class="d-flex position-relative">
                 <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger"><div class="m-1 border px-1">8</div></div>
+                  <div class=" border text-danger">
+                    <div class="m-1 border px-1">8</div>
+                  </div>
                 </div>
                 <img class="img-fluid" src="https://placehold.it/767x512/1e88e5?text=Slideshow" alt="some content">
               </div>
@@ -829,7 +864,9 @@
             <a href="#" class="text-dark text-decoration-none">
               <div class="d-flex position-relative">
                 <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger"><div class="m-1 border px-1">18</div></div>
+                  <div class=" border text-danger">
+                    <div class="m-1 border px-1">18</div>
+                  </div>
                 </div>
                 <img class="img-fluid" src="https://placehold.it/767x512/82b1ff?text=Slideshow" alt="some content">
               </div>
@@ -841,7 +878,9 @@
             <a href="#" class="text-dark text-decoration-none">
               <div class="d-flex position-relative">
                 <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger"><div class="m-1 border px-1">12</div></div>
+                  <div class=" border text-danger">
+                    <div class="m-1 border px-1">12</div>
+                  </div>
                 </div>
                 <img class="img-fluid" src="https://placehold.it/767x512/2979ff?text=Slideshow" alt="some content">
               </div>
@@ -854,7 +893,9 @@
             <a href="#" class="text-dark text-decoration-none">
               <div class="d-flex position-relative">
                 <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger"><div class="m-1 border px-1">11</div></div>
+                  <div class=" border text-danger">
+                    <div class="m-1 border px-1">11</div>
+                  </div>
                 </div>
                 <img class="img-fluid" src="https://placehold.it/767x512/03a9f4?text=Slideshow" alt="some content">
               </div>
@@ -1218,7 +1259,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-lg-5 col-xl-4">
           <h5 class="title pt-3 font-weight-bold text-danger text-uppercase">Newsletter</h5>
           <div class="row border align-items-center ml-lg-1">
