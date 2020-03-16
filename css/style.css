@@ -42,24 +42,11 @@ li.nav-li-separator {
 
 .container-xl {
   max-width: 1280px;
-  /* z-index: 101;
-  top: -74px; */
 }
 
 .main {
   max-width: 1250px;
-  /* z-index: 98;
-  top: -74px; */
 }
-
-/* .nav-hack {
-  z-index: 99;
-}
-
-.white-hack {
-  z-index: 100;
-  top: 0;
-} */
 
 .vs div {
   width: 40px;
@@ -67,10 +54,6 @@ li.nav-li-separator {
   font: bold 14px/40px "Roboto Condensed", sans-serif;
   margin: 14px auto 18px;
 }
-
-/* .white-hack div div {
-  height: 74px;
-} */
 
 .page-bottom,
 .sticky-scroll,
