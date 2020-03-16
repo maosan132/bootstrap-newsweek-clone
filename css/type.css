@@ -18,6 +18,10 @@ p.info,
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.footer a:hover {
+  cursor: pointer;
+}
+
 .logo-mini,
 .logo-big,
 .footer-logo {

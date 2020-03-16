@@ -109,10 +109,6 @@ footer {
   left: 100px;
 }
 
-.bg {
-  background: darkred;
-}
-
 footer i,
 .search i {
   font-size: 1.4em;
@@ -135,4 +131,6 @@ footer i:hover {
   }
 }
 
-.col-
+.col-md-2 {
+  max-width: 300px;
+}
