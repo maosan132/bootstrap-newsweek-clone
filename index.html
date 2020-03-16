@@ -1,6 +1,5 @@
 <!DOCTYPE html> 
-<html lang="en">
-  
+
 <head>
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-dark bg-danger nav-hack">
+    <nav class="nav-hack navbar sticky-top navbar-dark bg-danger d-lg-none">
         <div class="col-auto logo-mini text-white order-0  font-weight-bold">Newsweek</div>
         <div class="col weather-widget order-0 d-flex flex-column p-2 p-lg-3">
             <a href="" class="text-white font-weight-bold d-flex align-items-end"><i
@@ -39,7 +38,7 @@
                 <li class="nav-item"><a class="nav-link" href="#">Tech & Science</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Culture</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Newsgeek</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Sport</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sport</a></li>  
                 <li class="nav-item"><a class="nav-link" href="#">Health</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">The Debate</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Vantage</a></li>
@@ -48,13 +47,7 @@
 
         </div>
     </nav>
-    <div class="white-hack position-relative d-none d-lg-block">
-        <div class="row">
-            <div class="col bg-white"></div>
-        </div>
-    </div>
-    <div class=""></div>
-    <div style="z-index: 101;top:-74px" class="container-xl border-top pos position-relative d-none d-lg-block">
+    <div class="container-xl border-top position-relative d-none d-lg-block">
         <div class="">
             <div class="navbar navbar-expand-lg navbar-light bg-danger row">
 
@@ -87,22 +80,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse " id="navbarContent">
-                    <ul class="navbar-nav mr-auto d-lg-none bg-light w-25 float-right font-weight-bold">
-                        <li class="nav-item"><a class="nav-link" href="#">U.S.</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">World</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Tech & Science</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Culture</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Newsgeek</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sport</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Health</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">The Debate</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Vantage</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Weather</a></li>
-                    </ul>
-
-                </div>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content row border-bottom">
                 <div class="row collapse navbar-collapse" id="navbarNav">
@@ -1569,6 +1546,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</body>
+    <script src="js/nav.js"></script>
+  </body>
 
 </html>
