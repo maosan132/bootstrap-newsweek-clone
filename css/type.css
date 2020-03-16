@@ -39,12 +39,14 @@ footer a {
   font-size: 14px;
 }
 
-#navbarContent li a {
+#navbarContent li a,
+#collapsingNavbar li a {
   color: #000;
   text-decoration: none;
 }
 
-#navbarContent li a:hover {
+#navbarContent li a:hover,
+#collapsingNavbar li a:hover {
   color: #fff;
   background: #000;
 }

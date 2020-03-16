@@ -14,6 +14,7 @@ i.cloud-icon::after {
 }
 
 #navbarContent li a::after,
+#collapsingNavbar li a::after,
 .country::after {
   content: "  〉";
   font-weight: bolder;
@@ -56,6 +57,10 @@ footer {
 
 .title {
   cursor: pointer;
+}
+
+#collapsingNavbar ul {
+  width: 250px;
 }
 
 .category,
@@ -115,6 +120,10 @@ footer i,
   cursor: pointer;
 }
 
+footer i:hover {
+  opacity: 1;
+}
+
 @media only screen and (min-width: 768px) {
   .sticky1,
   .sticky3 {
@@ -125,3 +134,5 @@ footer i,
     height: 100%;
   }
 }
+
+.col-

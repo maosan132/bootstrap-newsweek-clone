@@ -2,1353 +2,1573 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-  <link rel="stylesheet" href="css/images.css">
-  <link rel="stylesheet" href="css/type.css">
-  <link rel="stylesheet" href="css/buttons.css">
-  <link rel="stylesheet" href="css/colors.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/type.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <title>Newsweek clone - Microverse Bootstrap Project</title>
+    <title>Newsweek clone - Microverse Bootstrap Project</title>
 </head>
 
 <body>
-
-  <div class="container-xl border-top sticky-top">
-    <div class="">
-      <div class="navbar navbar-expand-lg navbar-light bg-danger row">
-
-        <div class="col-auto logo-mini text-white order-0 d-lg-none font-weight-bold">Newsweek</div>
-
+    <nav style="z-index: 99;" class="navbar fixed-top navbar-dark bg-danger">
+        <div class="col-auto logo-mini text-white order-0  font-weight-bold">Newsweek</div>
         <div class="col weather-widget order-0 d-flex flex-column p-2 p-lg-3">
-          <a href="" class="text-white font-weight-bold d-flex align-items-end"><i
-              class="cloud-icon fas fa-cloud-sun position-relative"></i> 30° <span
-              class="country d-none d-sm-inline-block"> Cali, CO</span></a>
-          <span class="date text-white d-none d-lg-block">Tue, Wed 04, 2020</span>
+            <a href="" class="text-white font-weight-bold d-flex align-items-end"><i
+                    class="cloud-icon fas fa-cloud-sun position-relative"></i> 30° <span
+                    class="country d-none d-sm-inline-block"> Cali, CO</span></a>
+            <!-- <span class="date text-white d-none d-lg-block">Tue, Wed 04, 2020</span> -->
         </div>
-
-        <div class="col-auto logo-big text-white d-none d-lg-block m-auto float-right">
-          <h1 class="display-3 my-0 font-weight-bold">&nbsp;&nbsp;&nbsp;&nbsp; Newsweek</h1>
-        </div>
-
-        <a class="navbar signin btn text-white rounded-0 p-1 d-lg-none font-weight-bold mr-2" href="#">SIGN IN</a>
-        <a class="navbar suscribe-btn btn btn-light text-danger font-weight-bold rounded-0 p-0 px-1 pl-2 d-lg-none"
-          href="#">SUSCRIBE</a>
-
-        <div class="col-auto top-links order-3 pl-3 pt-3 pb-2 pr-0 d-none d-lg-block align-self-end"><a href=""
-            class="signin btn text-white rounded-0 p-1 font-weight-bold mr-2">SIGN IN </a><a href=""
-            class="suscribe-btn btn btn-light text-danger p-0 px-1 pl-2 font-weight-bold rounded-0">SUBSCRIBE</a>
-        </div>
-
-        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarContent"
-          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar signin btn text-white rounded-0 p-1 font-weight-bold mr-2" href="#">SIGN
+            IN</a>
+        <a class="navbar suscribe-btn btn btn-light text-danger font-weight-bold rounded-0 p-0 px-1 pl-2 "
+            href="#">SUSCRIBE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse " id="navbarContent">
-          <ul class="navbar-nav mr-auto d-lg-none bg-light w-25 float-right font-weight-bold">
-            <li class="nav-item"><a class="nav-link" href="#">U.S.</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">World</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Tech & Science</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Culture</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Newsgeek</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Sport</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Health</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">The Debate</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Vantage</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Weather</a></li>
-          </ul>
-
-        </div>
-      </div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content row border-bottom">
-        <div class="row collapse navbar-collapse" id="navbarNav">
-          <ul class="col navbar-nav font-weight-bold justify-content-between">
-            <li class="nav-item"><a class="nav-link text-dark dfg" href="#">U.S.</a></li>
-            <li class="nav-li-separator border-left my-2"></li>
-            <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">World</a></li>
-            <li class="nav-li-separator border-left my-2"></li>
-            <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Business</a></li>
-            <li class="nav-li-separator border-left my-2"></li>
-            <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Tech & Science</a></li>
-            <li class="nav-li-separator border-left my-2"></li>
-            <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Culture</a></li>
-            <li class="nav-li-separator border-left my-2"></li>
-            <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Newsgeek</a></li>
-            <li class="nav-li-separator border-left my-2"></li>
-            <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Sport</a></li>
-            <li class="nav-li-separator border-left my-2"></li>
-            <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Health</a></li>
-            <li class="nav-li-separator border-left my-2"></li>
-            <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">The Debate</a></li>
-            <li class="nav-li-separator border-left my-2"></li>
-            <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Vantage</a></li>
-            <li class="nav-li-separator border-left my-2"></li>
-            <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Weather</a></li>
-          </ul>
-          <span class="col-auto search mr-5 text-nw-lightgray">Search <i class="fas fa-search"></i></span>
-          <div style="top:0;right:0;width:70px;height:15px;border-left: 12px solid white;
-          border-top: 13px solid #ff0000;" class="d-inline-block decoration bg-danger position-absolute pr-0"></div>
-        </div>
-      </nav>
-    </div>
-  </div>
-
-  <div class="main container bg-white pt-4">
-    <section class="sticky-scroll pb-3">
-      <h2 class="d-none">empty heading</h2>
-      <div class="row">
-        <div class="col-md-12 col-lg-8">
-          <div class="row">
-            <div class="col-md-5 sticky1 position-sticky">
-              <div class="d-block d-md-none">
-                <div class="title pb-2 font-weight-bold text-nw-lightgray">TOP-STORY</div>
-                <article>
-                  <a href="#" class="text-dark text-decoration-none">
-                    <div class="d-flex position-relative">
-                      <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold"> U.S.
-                      </div><div class=" border border-primary p-1 bg-danger">
-                      <img class="img-fluid border border-warning" src='https://placehold.it/767x512/2471a3?text=TOP-STORY'
-                        alt='some content' /></div>
-                    </div>
-                    <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
-                      Election</h4>
-                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-                      voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid pariatur quidem
-                      assumenda temporibus alias deleniti.</p>
-                  </a>
-                </article>
-              </div>
-              <div class="title pb-2 font-weight-bold text-nw-lightgray">FEATURED STORIES</div>
-              <article>
-                <a href="#" class="text-dark text-decoration-none">
-                  <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">WORLD
-                    </div>
-                    <img class="img-fluid" src='https://placehold.it/767x512/7dcea0?text=Featured1'
-                      alt='some content' />
-                  </div>
-                  <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
-                    Election</h4>
-
-                </a>
-                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-                  voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid pariatur quidem
-                  assumenda temporibus alias deleniti.</p>
-                <a href="#" class="related text-decoration-none text-reset font-weight-bold">
-                  <p class="border-top border-bottom py-3">Sanders Implies Voter Suppression At Michigan Polls During
-                    Primaries</p>
-                </a>
-              </article>
-              <article>
-                <a href="#" class="text-dark text-decoration-none">
-                  <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
-                    </div>
-                    <img class="img-fluid" src='https://placehold.it/767x512/f39c12?text=Featured2'
-                      alt='some content' />
-                  </div>
-                  <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
-                    Election</h4>
-                  <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-                    voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid pariatur quidem
-                    assumenda temporibus alias deleniti.</p>
-                </a>
-              </article>
-              <article>
-                <a href="#" class="text-dark text-decoration-none">
-                  <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">U.S.
-                    </div>
-                    <img class="img-fluid" src='https://placehold.it/767x512/2c3e50?text=Featured3'
-                      alt='some content' />
-                  </div>
-                  <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
-                    Election</h4>
-                  <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-                    voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid pariatur quidem
-                    assumenda temporibus alias deleniti.</p>
-                </a>
-              </article>
-              <article>
-                <a href="#" class="text-dark text-decoration-none">
-                  <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">WORLD
-                    </div>
-                    <img class="img-fluid" src='https://placehold.it/767x512/85c1e9?text=Featured4'
-                      alt='some content' />
-                  </div>
-                  <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
-                    Election</h4>
-                  <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-                    voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid pariatur quidem
-                    assumenda temporibus alias deleniti.</p>
-                </a>
-              </article>
-            </div>
-            <div class="col-md-7 sticky2">
-              <div class="d-none d-md-block">
-                <div class="title pb-2 font-weight-bold text-nw-lightgray">TOP-STORY</div>
-                <article>
-                  <a href="#" class="text-dark text-decoration-none">
-                    <div class="d-flex position-relative">
-                      <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold"> U.S.
-                      </div><div class=" border border-primary p-1 bg-danger">
-                      <img class="img-fluid border border-warning" src='https://placehold.it/767x512/2471a3?text=TOP-STORY'
-                        alt='some content' /></div>
-                    </div>
-                    <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
-                      Election</h4>
-                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-                      voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid pariatur quidem
-                      assumenda temporibus alias deleniti.</p>
-                  </a>
-                </article>
-              </div>
-              <div class="title pb-2 font-weight-bold text-nw-lightgray">CULTURE & TRAVEL</div>
-              <div class="row culture">
-                <div class="col-md-4">
-                  <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-1 px-2 text-dark font-weight-bold">
-                      <small>ITALY</small>
-                    </div>
-                    <img class="img-fluid" src='https://placehold.it/767x767/ba68c8?text=ITALY' alt='some content' />
-                  </div>
-                  <div>
-                    <div class="heading text-secondary pt-2 pb-1">Italy coronavirus lockdown: how to reschedule flights,
-                      receive refunds on travel plans
-                    </div>
-                    <p class="summary text-nw-lightgray">Ahead of the country-wide lockdown announcement, airlines
-                      already started giving customers options to change their travel plans.</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-1 px-2 text-dark font-weight-bold">
-                      <small>NETFLIX</small>
-                    </div>
-                    <img class="img-fluid" src='https://placehold.it/767x767/FF80AB?text=NETFLIX' alt='some content' />
-                  </div>
-                  <div>
-                    <div class="heading text-secondary pt-2 pb-1">'Restaurants on the Edge': Hosts Dish About New
-                      Netflix
-                      Show
-                    </div>
-                    <p class="summary text-nw-lightgray">Netflix's new food and travel docuseries spans the globe as it
-                      makes over failing restaurants that try to get by on their beautiful views alone.
-                  </div>
-                </div>
-                <div class="col-md-4 vh-75 vh-md-25">
-                  <div class="d-flex position-relative">
-                    <div class="category position-absolute bg-nw-lightwhite p-1 px-2 text-dark font-weight-bold">
-                      <small>TRAVEL</small>
-                    </div>
-                    <img class="img-fluid" src='https://placehold.it/767x767/76D7C4?text=TRAVEL' alt='some content' />
-                  </div>
-                  <div>
-                    <div class="heading text-secondary pt-2 pb-1">Best Stargazing Spots Around the Globe
-                    </div>
-                    <p class="summary text-nw-lightgray">Astrotourism is taking off, and these are the best places—on
-                      our planet, at least—to witness the dazzling display of luminous balls of gas that we call stars.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="title pb-2 font-weight-bold text-nw-lightgray">MORE STORIES</div>
-              <article class="row stories pb-4">
-                <div class="divisor col-11 border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/ccff00?text=OLYMPICS' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages from IOC, Organizers
-                    on Tokyo 2020</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-              <article class="row stories pb-4">
-                <div class="divisor col-11  border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/5e35b1?text=HEALTH' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Despite Sanders' Losses, Voters Prefer Government Health
-                    Plan</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-              <article class="row stories pb-4">
-                <div class="divisor col-11  border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/3498db?text=SENATORS' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages from IOC, Organizers
-                    on Tokyo 2020</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-              <article class="row stories pb-4">
-                <div class="divisor col-11  border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/17a589?text=RUSSIAN' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Despite Sanders' Losses, Voters Prefer Government Health
-                    Plan</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-              <article class="row stories pb-4">
-                <div class="divisor col-11  border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/27ae60?text=IRANIAN' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages from IOC, Organizers
-                    on Tokyo 2020</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-              <article class="row stories pb-4">
-                <div class="divisor col-11  border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/f1c40f?text=MORTGAGE' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Despite Sanders' Losses, Voters Prefer Government Health
-                    Plan</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-              <article class="row stories pb-4">
-                <div class="divisor col-11  border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/ca6f1e?text=COVID-19' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages from IOC, Organizers
-                    on Tokyo 2020</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-              <article class="row stories pb-4">
-                <div class="divisor col-11  border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/a6acaf?text=OBAMA' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Despite Sanders' Losses, Voters Prefer Government Health
-                    Plan</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-              <article class="row stories pb-4">
-                <div class="divisor col-11  border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/536dfe?text=KELLY' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages from IOC, Organizers
-                    on Tokyo 2020</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-              <article class="row stories pb-4">
-                <div class="divisor col-11  border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/283747?text=PENCE' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Despite Sanders' Losses, Voters Prefer Government Health
-                    Plan</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-              <article class="row stories pb-4">
-                <div class="divisor col-11  border-top pt-3 mx-3"></div>
-                <div class="col-auto"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/2196f3?text=REPORT' alt='some content' />
-                </div>
-                <div class="float-left col-9 col-md-8 ml-n3">
-                  <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages from IOC, Organizers
-                    on Tokyo 2020</h4>
-                  <div class="summary text-lightgray">The Olympic Games are scheduled to get underway on July 24, but
-                    organizers and the IOC
-                    have delivered mixed messages recently.</div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 aside sticky3 position-sticky">
-          <div class="row opinion">
-            <div class="col-12 title pb-2 font-weight-bold text-nw-lightgray">OPINION</div>
-            <ul class="col-12 list-unstyled">
-              <li class="row">
-                <div class=" col-auto mr-n3"><a href="#"><img class="avatar1 img-fluid rounded-circle float-left"
-                      src='images/face_shey.svg' alt='some content' /></a></div>
-                <div class="col-10 col-lg-9">
-                  <a href="#" class="info font-weight-bold text-reset text-decoration-none">
-                    In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
-                  <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small> </div>
-                </div>
-              </li>
-              <li class="dropdown-divider"></li>
-              <li class="row">
-                <div class="col-auto mr-n3"><a href="#"><img class="avatar2 img-fluid rounded-circle float-left"
-                      src="images/face_mao.svg" alt='some content' /></a></div>
-                <div class="col-9">
-                  <a href="#" class="info font-weight-bold text-reset text-decoration-none">
-                    In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
-                  <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small> </div>
-                </div>
-              </li>
-              <li class="dropdown-divider"></li>
-              <li class="row">
-                <div class="col-auto mr-n3"><a href="#"><img class="avatar1 img-fluid rounded-circle float-left"
-                      src="images/face_shey.svg" alt='some content' /></a></div>
-                <div class="col-9">
-                  <a href="#" class="info font-weight-bold text-reset text-decoration-none">
-                    In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
-                  <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small> </div>
-                </div>
-              </li>
-              <li class="dropdown-divider"></li>
-              <li class="row">
-                <div class="col-auto mr-n3"><a href="#"><img class="avatar2 img-fluid rounded-circle float-left"
-                      src="images/face_mao.svg" alt='some content' /></a></div>
-                <div class="col-9">
-                  <a href="#" class="info font-weight-bold text-reset text-decoration-none">
-                    In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
-                  <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small> </div>
-                </div>
-              </li>
-              <li class="dropdown-divider"></li>
-              <li class="row">
-                <div class="col-auto mr-n3"><a href="#"><img class="avatar1 img-fluid rounded-circle float-left"
-                      src="images/face_shey.svg" alt='some content' /></a></div>
-                <div class="col-9">
-                  <a href="#" class="info font-weight-bold text-reset text-decoration-none">
-                    In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
-                  <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small> </div>
-                </div>
-              </li>
-              <li class="dropdown-divider"></li>
-              <li class="row">
-                <div class="col-auto mr-n3"><a href="#"><img class="avatar2 img-fluid rounded-circle float-left"
-                      src="images/face_mao.svg" alt='some content' /></a></div>
-                <div class="col-9">
-                  <a href="#" class="font-weight-bold text-reset text-decoration-none info">
-                    In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
-                  <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small> </div>
-                </div>
-              </li>
-
+        <div class="navbar-collapse collapse" id="collapsingNavbar">
+            <ul class="navbar-nav mr-auto bg-light float-right font-weight-bold pl-2">
+                <li class="nav-item"><a class="nav-link" href="#">U.S.</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">World</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tech & Science</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Culture</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Newsgeek</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sport</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Health</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">The Debate</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Vantage</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Weather</a></li>
             </ul>
-            <div class="col-12 title pb-2 font-weight-bold text-nw-lightgray">THE DEBATE</div>
-            <div class="debate-1-divisor col-11 pt-3 mx-3 pb-0"></div>
-            <div class="row px-3 align-items-center pt-0 mt-n3">
-              <div class="col-auto"><img class="img-fluid float-left"
-                  src='https://placehold.it/95x95/00e5ff?text=EPIDEMICS' alt='some content' />
-              </div>
-              <div class="col-9 col-lg-8 ml-n3">
-                <h4 class="more-stories font-weight-bold">Protecting Us All From an Epidemic Should Be Prioritized Over
-                  the Economy</h4>
-              </div>
-            </div>
-            <div class="col-12 pt-3 pb-4">
-              <div class="row position-relative">
-                <div class="debate-bottom-divisor col-11 pt-3 mx-3 pb-0"></div>
-                <div class="col-9 mt-n3"><small><span class="text-lightgray">BY</span> <b>SAM HILL</b></small></div>
-                <div class="col-3"><a href="#"><img src="images/face_shey.svg"
-                      class="debate1 img-fluid rounded-circle float-right position-absolute" alt="some content"></a>
+
+        </div>
+    </nav>
+    <div style="z-index: 100;top:0;" class="white-hack position-relative d-none d-lg-block">
+        <div class="row">
+            <div style="height:74px;" class="col bg-white"></div>
+        </div>
+    </div>
+    <div class=""></div>
+    <div style="z-index: 101;top:-74px" class="container-xl border-top pos position-relative d-none d-lg-block">
+        <div class="">
+            <div class="navbar navbar-expand-lg navbar-light bg-danger row">
+
+                <div class="col-auto logo-mini text-white order-0 d-lg-none font-weight-bold">Newsweek</div>
+
+                <div class="col weather-widget order-0 d-flex flex-column p-2 p-lg-3">
+                    <a href="" class="text-white font-weight-bold d-flex align-items-end"><i
+                            class="cloud-icon fas fa-cloud-sun position-relative"></i> 30° <span
+                            class="country d-none d-sm-inline-block"> Cali, CO</span></a>
+                    <span class="date text-white d-none d-lg-block">Tue, Wed 04, 2020</span>
                 </div>
-              </div>
-            </div>
-            <div class="vs row px-3 pt-2 mt-n3 mx-auto">
-              <div class="rounded-circle bg-dark text-white text-center">vs</div>
-            </div>
-            <div class="debate-2-divisor col-11 pt-3 mx-3 pb-0"></div>
-            <div class="row px-3 align-items-center pt-0 mt-n3">
-              <div class="col-auto"><img class="img-fluid float-left"
-                  src='https://placehold.it/95x95/ffff00?text=CORONAVIRUS' alt='some content' />
-              </div>
-              <div class="col-9 col-lg-8  ml-n3">
-                <h4 class="more-stories font-weight-bold">Protecting Us All From an Epidemic Should Be Prioritized Over
-                  the Economy</h4>
-              </div>
-            </div>
-            <div class="col-12 pt-3 pb-4">
-              <div class="row position-relative">
-                <div class="debate-bottom-divisor col-11 pt-3 mx-3 pb-0"></div>
-                <div class="col-9 mt-n3"><small><span class="text-lightgray">BY</span> <b>MAURO SANTOS</b></small></div>
-                <div class="col-3"><a href="#"><img src="images/face_mao.svg"
-                      class="debate2 img-fluid rounded-circle float-right position-absolute" alt="some content"></a>
+
+                <div class="col-auto logo-big text-white d-none d-lg-block m-auto float-right">
+                    <h1 class="display-3 my-0 font-weight-bold">&nbsp;&nbsp;&nbsp;&nbsp; Newsweek</h1>
                 </div>
-              </div>
+
+                <a class="navbar signin btn text-white rounded-0 p-1 d-lg-none font-weight-bold mr-2" href="#">SIGN
+                    IN</a>
+                <a class="navbar suscribe-btn btn btn-light text-danger font-weight-bold rounded-0 p-0 px-1 pl-2 d-lg-none"
+                    href="#">SUSCRIBE</a>
+
+                <div class="col-auto top-links order-3 pl-3 pt-3 pb-2 pr-0 d-none d-lg-block align-self-end"><a href=""
+                        class="signin btn text-white rounded-0 p-1 font-weight-bold mr-2">SIGN IN </a><a href=""
+                        class="suscribe-btn btn btn-light text-danger p-0 px-1 pl-2 font-weight-bold rounded-0">SUBSCRIBE</a>
+                </div>
+
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+                    data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarContent">
+                    <ul class="navbar-nav mr-auto d-lg-none bg-light w-25 float-right font-weight-bold">
+                        <li class="nav-item"><a class="nav-link" href="#">U.S.</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">World</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tech & Science</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Culture</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Newsgeek</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sport</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Health</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">The Debate</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Vantage</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Weather</a></li>
+                    </ul>
+
+                </div>
             </div>
-          </div>
-          <div class="row lastest-news">
-            <div class="title py-2 font-weight-bold text-nw-lightgray">LASTEST NEWS</div>
-            <div class="row px-3">
-              <div class="col-auto pb-3"><img class="img-fluid float-left"
-                  src='https://placehold.it/95x95/aed581?text=W-GOLDBERG' alt='some content' />
-              </div>
-              <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                <h4 class="lastests font-weight-bold">Watch Whoopi Goldberg Talk to Empty 'View' Audience Because of
-                  Coronavirus</h4>
-              </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content row border-bottom">
+                <div class="row collapse navbar-collapse" id="navbarNav">
+                    <ul class="col navbar-nav font-weight-bold justify-content-between">
+                        <li class="nav-item"><a class="nav-link text-dark dfg" href="#">U.S.</a></li>
+                        <li class="nav-li-separator border-left my-2"></li>
+                        <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">World</a></li>
+                        <li class="nav-li-separator border-left my-2"></li>
+                        <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Business</a></li>
+                        <li class="nav-li-separator border-left my-2"></li>
+                        <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Tech & Science</a></li>
+                        <li class="nav-li-separator border-left my-2"></li>
+                        <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Culture</a></li>
+                        <li class="nav-li-separator border-left my-2"></li>
+                        <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Newsgeek</a></li>
+                        <li class="nav-li-separator border-left my-2"></li>
+                        <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Sport</a></li>
+                        <li class="nav-li-separator border-left my-2"></li>
+                        <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Health</a></li>
+                        <li class="nav-li-separator border-left my-2"></li>
+                        <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">The Debate</a></li>
+                        <li class="nav-li-separator border-left my-2"></li>
+                        <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Vantage</a></li>
+                        <li class="nav-li-separator border-left my-2"></li>
+                        <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Weather</a></li>
+                    </ul>
+                    <span class="col-auto search mr-5 text-nw-lightgray">Search <i class="fas fa-search"></i></span>
+                    <div style="top:0;right:0;width:70px;height:15px;border-left: 12px solid white;
+          border-top: 13px solid #ff0000;" class="d-inline-block decoration bg-danger position-absolute pr-0"></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div style="z-index:98; top: -74px" class="main container bg-white position-relative pt-4">
+        <section class="sticky-scroll pb-3">
+            <h2 class="d-none">empty heading</h2>
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-5 sticky1 position-sticky">
+                            <div class="d-block d-md-none">
+                                <div class="title pb-2 font-weight-bold text-nw-lightgray">TOP-STORY</div>
+                                <article>
+                                    <a href="#" class="text-dark text-decoration-none">
+                                        <div class="d-flex position-relative">
+                                            <div
+                                                class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                                U.S.
+                                            </div>
+                                            <div class=" border border-primary p-1 bg-danger">
+                                                <img class="img-fluid border border-warning"
+                                                    src='https://placehold.it/767x512/2471a3?text=TOP-STORY'
+                                                    alt='some content' /></div>
+                                        </div>
+                                        <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
+                                            Election</h4>
+                                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Iusto neque illum unde
+                                            voluptas et ea architecto quae esse expedita? Autem rem inventore quos
+                                            aliquid pariatur quidem
+                                            assumenda temporibus alias deleniti.</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="title pb-2 font-weight-bold text-nw-lightgray">FEATURED STORIES</div>
+                            <article>
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex position-relative">
+                                        <div
+                                            class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                            WORLD
+                                        </div>
+                                        <img class="img-fluid" src='https://placehold.it/767x512/7dcea0?text=Featured1'
+                                            alt='some content' />
+                                    </div>
+                                    <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
+                                        Election</h4>
+
+                                </a>
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                    neque illum unde
+                                    voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid
+                                    pariatur quidem
+                                    assumenda temporibus alias deleniti.</p>
+                                <a href="#" class="related text-decoration-none text-reset font-weight-bold">
+                                    <p class="border-top border-bottom py-3">Sanders Implies Voter Suppression At
+                                        Michigan Polls During
+                                        Primaries</p>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex position-relative">
+                                        <div
+                                            class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                            POLITICS
+                                        </div>
+                                        <img class="img-fluid" src='https://placehold.it/767x512/f39c12?text=Featured2'
+                                            alt='some content' />
+                                    </div>
+                                    <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
+                                        Election</h4>
+                                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                        neque illum unde
+                                        voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid
+                                        pariatur quidem
+                                        assumenda temporibus alias deleniti.</p>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex position-relative">
+                                        <div
+                                            class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                            U.S.
+                                        </div>
+                                        <img class="img-fluid" src='https://placehold.it/767x512/2c3e50?text=Featured3'
+                                            alt='some content' />
+                                    </div>
+                                    <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
+                                        Election</h4>
+                                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                        neque illum unde
+                                        voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid
+                                        pariatur quidem
+                                        assumenda temporibus alias deleniti.</p>
+                                </a>
+                            </article>
+                            <article>
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <div class="d-flex position-relative">
+                                        <div
+                                            class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                            WORLD
+                                        </div>
+                                        <img class="img-fluid" src='https://placehold.it/767x512/85c1e9?text=Featured4'
+                                            alt='some content' />
+                                    </div>
+                                    <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
+                                        Election</h4>
+                                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                                        neque illum unde
+                                        voluptas et ea architecto quae esse expedita? Autem rem inventore quos aliquid
+                                        pariatur quidem
+                                        assumenda temporibus alias deleniti.</p>
+                                </a>
+                            </article>
+                        </div>
+                        <div class="col-md-7 sticky2">
+                            <div class="d-none d-md-block">
+                                <div class="title pb-2 font-weight-bold text-nw-lightgray">TOP-STORY</div>
+                                <article>
+                                    <a href="#" class="text-dark text-decoration-none">
+                                        <div class="d-flex position-relative">
+                                            <div
+                                                class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                                U.S.
+                                            </div>
+                                            <div class=" border border-primary p-1 bg-danger">
+                                                <img class="img-fluid border border-warning"
+                                                    src='https://placehold.it/767x512/2471a3?text=TOP-STORY'
+                                                    alt='some content' /></div>
+                                        </div>
+                                        <h4 class="font-weight-bold pt-3">What the Polls Say About a Trump vs. Sanders
+                                            Election</h4>
+                                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Iusto neque illum unde
+                                            voluptas et ea architecto quae esse expedita? Autem rem inventore quos
+                                            aliquid pariatur quidem
+                                            assumenda temporibus alias deleniti.</p>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="title pb-2 font-weight-bold text-nw-lightgray">CULTURE & TRAVEL</div>
+                            <div class="row culture">
+                                <div class="col-md-4">
+                                    <div class="d-flex position-relative">
+                                        <div
+                                            class="category position-absolute bg-nw-lightwhite p-1 px-2 text-dark font-weight-bold">
+                                            <small>ITALY</small>
+                                        </div>
+                                        <img class="img-fluid" src='https://placehold.it/767x767/ba68c8?text=ITALY'
+                                            alt='some content' />
+                                    </div>
+                                    <div>
+                                        <div class="heading text-secondary pt-2 pb-1">Italy coronavirus lockdown: how to
+                                            reschedule flights,
+                                            receive refunds on travel plans
+                                        </div>
+                                        <p class="summary text-nw-lightgray">Ahead of the country-wide lockdown
+                                            announcement, airlines
+                                            already started giving customers options to change their travel plans.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex position-relative">
+                                        <div
+                                            class="category position-absolute bg-nw-lightwhite p-1 px-2 text-dark font-weight-bold">
+                                            <small>NETFLIX</small>
+                                        </div>
+                                        <img class="img-fluid" src='https://placehold.it/767x767/FF80AB?text=NETFLIX'
+                                            alt='some content' />
+                                    </div>
+                                    <div>
+                                        <div class="heading text-secondary pt-2 pb-1">'Restaurants on the Edge': Hosts
+                                            Dish About New
+                                            Netflix
+                                            Show
+                                        </div>
+                                        <p class="summary text-nw-lightgray">Netflix's new food and travel docuseries
+                                            spans the globe as it
+                                            makes over failing restaurants that try to get by on their beautiful views
+                                            alone.
+                                    </div>
+                                </div>
+                                <div class="col-md-4 vh-75 vh-md-25">
+                                    <div class="d-flex position-relative">
+                                        <div
+                                            class="category position-absolute bg-nw-lightwhite p-1 px-2 text-dark font-weight-bold">
+                                            <small>TRAVEL</small>
+                                        </div>
+                                        <img class="img-fluid" src='https://placehold.it/767x767/76D7C4?text=TRAVEL'
+                                            alt='some content' />
+                                    </div>
+                                    <div>
+                                        <div class="heading text-secondary pt-2 pb-1">Best Stargazing Spots Around the
+                                            Globe
+                                        </div>
+                                        <p class="summary text-nw-lightgray">Astrotourism is taking off, and these are
+                                            the best places—on
+                                            our planet, at least—to witness the dazzling display of luminous balls of
+                                            gas that we call stars.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="title pb-2 font-weight-bold text-nw-lightgray">MORE STORIES</div>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/ccff00?text=OLYMPICS' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages
+                                        from IOC, Organizers
+                                        on Tokyo 2020</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11  border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/5e35b1?text=HEALTH' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Despite Sanders' Losses, Voters Prefer
+                                        Government Health
+                                        Plan</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11  border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/3498db?text=SENATORS' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages
+                                        from IOC, Organizers
+                                        on Tokyo 2020</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11  border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/17a589?text=RUSSIAN' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Despite Sanders' Losses, Voters Prefer
+                                        Government Health
+                                        Plan</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11  border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/27ae60?text=IRANIAN' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages
+                                        from IOC, Organizers
+                                        on Tokyo 2020</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11  border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/f1c40f?text=MORTGAGE' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Despite Sanders' Losses, Voters Prefer
+                                        Government Health
+                                        Plan</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11  border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/ca6f1e?text=COVID-19' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages
+                                        from IOC, Organizers
+                                        on Tokyo 2020</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11  border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/a6acaf?text=OBAMA' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Despite Sanders' Losses, Voters Prefer
+                                        Government Health
+                                        Plan</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11  border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/536dfe?text=KELLY' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages
+                                        from IOC, Organizers
+                                        on Tokyo 2020</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11  border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/283747?text=PENCE' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Despite Sanders' Losses, Voters Prefer
+                                        Government Health
+                                        Plan</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                            <article class="row stories pb-4">
+                                <div class="divisor col-11  border-top pt-3 mx-3"></div>
+                                <div class="col-auto"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/2196f3?text=REPORT' alt='some content' />
+                                </div>
+                                <div class="float-left col-9 col-md-8 ml-n3">
+                                    <h4 class="more-stories font-weight-bold">Will Olympics Go Ahead? Mixed Messages
+                                        from IOC, Organizers
+                                        on Tokyo 2020</h4>
+                                    <div class="summary text-lightgray">The Olympic Games are scheduled to get underway
+                                        on July 24, but
+                                        organizers and the IOC
+                                        have delivered mixed messages recently.</div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 aside sticky3 position-sticky">
+                    <div class="row opinion">
+                        <div class="col-12 title pb-2 font-weight-bold text-nw-lightgray">OPINION</div>
+                        <ul class="col-12 list-unstyled">
+                            <li class="row">
+                                <div class=" col-auto mr-n3"><a href="#"><img
+                                            class="avatar1 img-fluid rounded-circle float-left"
+                                            src='images/face_shey.svg' alt='some content' /></a></div>
+                                <div class="col-10 col-lg-9">
+                                    <a href="#" class="info font-weight-bold text-reset text-decoration-none">
+                                        In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
+                                    <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li class="row">
+                                <div class="col-auto mr-n3"><a href="#"><img
+                                            class="avatar2 img-fluid rounded-circle float-left"
+                                            src="images/face_mao.svg" alt='some content' /></a></div>
+                                <div class="col-9">
+                                    <a href="#" class="info font-weight-bold text-reset text-decoration-none">
+                                        In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
+                                    <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li class="row">
+                                <div class="col-auto mr-n3"><a href="#"><img
+                                            class="avatar1 img-fluid rounded-circle float-left"
+                                            src="images/face_shey.svg" alt='some content' /></a></div>
+                                <div class="col-9">
+                                    <a href="#" class="info font-weight-bold text-reset text-decoration-none">
+                                        In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
+                                    <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li class="row">
+                                <div class="col-auto mr-n3"><a href="#"><img
+                                            class="avatar2 img-fluid rounded-circle float-left"
+                                            src="images/face_mao.svg" alt='some content' /></a></div>
+                                <div class="col-9">
+                                    <a href="#" class="info font-weight-bold text-reset text-decoration-none">
+                                        In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
+                                    <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li class="row">
+                                <div class="col-auto mr-n3"><a href="#"><img
+                                            class="avatar1 img-fluid rounded-circle float-left"
+                                            src="images/face_shey.svg" alt='some content' /></a></div>
+                                <div class="col-9">
+                                    <a href="#" class="info font-weight-bold text-reset text-decoration-none">
+                                        In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
+                                    <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li class="row">
+                                <div class="col-auto mr-n3"><a href="#"><img
+                                            class="avatar2 img-fluid rounded-circle float-left"
+                                            src="images/face_mao.svg" alt='some content' /></a></div>
+                                <div class="col-9">
+                                    <a href="#" class="font-weight-bold text-reset text-decoration-none info">
+                                        In the Taliban-U.S. Agreement, Everybody Wins—Except Women</a>
+                                    <div class="byline text-muted"><small class=" font-weight-bold">BY SAM HILL</small>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="col-12 title pb-2 font-weight-bold text-nw-lightgray">THE DEBATE</div>
+                        <div class="debate-1-divisor col-11 pt-3 mx-3 pb-0"></div>
+                        <div class="row px-3 align-items-center pt-0 mt-n3">
+                            <div class="col-auto"><img class="img-fluid float-left"
+                                    src='https://placehold.it/95x95/00e5ff?text=EPIDEMICS' alt='some content' />
+                            </div>
+                            <div class="col-9 col-lg-8 ml-n3">
+                                <h4 class="more-stories font-weight-bold">Protecting Us All From an Epidemic Should Be
+                                    Prioritized Over
+                                    the Economy</h4>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-3 pb-4">
+                            <div class="row position-relative">
+                                <div class="debate-bottom-divisor col-11 pt-3 mx-3 pb-0"></div>
+                                <div class="col-9 mt-n3"><small><span class="text-lightgray">BY</span> <b>SAM
+                                            HILL</b></small></div>
+                                <div class="col-3"><a href="#"><img src="images/face_shey.svg"
+                                            class="debate1 img-fluid rounded-circle float-right position-absolute"
+                                            alt="some content"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vs row px-3 pt-2 mt-n3 mx-auto">
+                            <div class="rounded-circle bg-dark text-white text-center">vs</div>
+                        </div>
+                        <div class="debate-2-divisor col-11 pt-3 mx-3 pb-0"></div>
+                        <div class="row px-3 align-items-center pt-0 mt-n3">
+                            <div class="col-auto"><img class="img-fluid float-left"
+                                    src='https://placehold.it/95x95/ffff00?text=CORONAVIRUS' alt='some content' />
+                            </div>
+                            <div class="col-9 col-lg-8  ml-n3">
+                                <h4 class="more-stories font-weight-bold">Protecting Us All From an Epidemic Should Be
+                                    Prioritized Over
+                                    the Economy</h4>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-3 pb-4">
+                            <div class="row position-relative">
+                                <div class="debate-bottom-divisor col-11 pt-3 mx-3 pb-0"></div>
+                                <div class="col-9 mt-n3"><small><span class="text-lightgray">BY</span> <b>MAURO
+                                            SANTOS</b></small></div>
+                                <div class="col-3"><a href="#"><img src="images/face_mao.svg"
+                                            class="debate2 img-fluid rounded-circle float-right position-absolute"
+                                            alt="some content"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row lastest-news">
+                        <div class="title py-2 font-weight-bold text-nw-lightgray">LASTEST NEWS</div>
+                        <div class="row px-3">
+                            <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                    src='https://placehold.it/95x95/aed581?text=W-GOLDBERG' alt='some content' />
+                            </div>
+                            <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                <h4 class="lastests font-weight-bold">Watch Whoopi Goldberg Talk to Empty 'View'
+                                    Audience Because of
+                                    Coronavirus</h4>
+                            </div>
+                        </div>
+                        <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                        <div class="row px-3">
+                            <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                    src='https://placehold.it/95x95/e74c3c?text=W-CRUISE' alt='some content' />
+                            </div>
+                            <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False
+                                    Information on
+                                    Coronavirus</h4>
+                            </div>
+                        </div>
+                        <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                        <div class="row px-3">
+                            <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                    src='https://placehold.it/95x95/2471a3?text=W-JAILS' alt='some content' />
+                            </div>
+                            <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False
+                                    Information on
+                                    Coronavirus</h4>
+                            </div>
+                        </div>
+                        <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                        <div class="row px-3">
+                            <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                    src='https://placehold.it/95x95/7d3c98?text=W-EMERGENCY' alt='some content' />
+                            </div>
+                            <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False
+                                    Information on
+                                    Coronavirus</h4>
+                            </div>
+                        </div>
+                        <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                        <div class="row px-3">
+                            <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                    src='https://placehold.it/95x95/ff33ff?text=W-REBOOT' alt='some content' />
+                            </div>
+                            <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False
+                                    Information on
+                                    Coronavirus</h4>
+                            </div>
+                        </div>
+                        <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                        <div class="row px-3">
+                            <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                    src='https://placehold.it/95x95/666633?text=W-PANDEMIC' alt='some content' />
+                            </div>
+                            <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False
+                                    Information on
+                                    Coronavirus</h4>
+                            </div>
+                        </div>
+                        <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                        <div class="row px-3">
+                            <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                    src='https://placehold.it/95x95/148f77?text=W-TRACK' alt='some content' />
+                            </div>
+                            <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False
+                                    Information on
+                                    Coronavirus</h4>
+                            </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="row newsletter">
+                            <div class="bg-light pl-3 pr-5 py-4 border justify-content-baseline">
+                                <h5 class="nw-n title d-flex font-weight-bold align-items-center">
+                                    <span
+                                        class="bg-danger text-white font-weight-bolder p-2 px-2 lead float-left mr-1">N
+                                    </span>
+                                    SIGN UP FOR OUR NEWSLETTER
+                                </h5>
+                                <a href="#" class="btn btn-secondary my-2 rounded-0">SIGN UP</a><a href="#"
+                                    class="text-dark d-block "><small class="font-weight-bold">Update your preferences
+                                        »</small></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="divisor col-11 border-top pt-3 mx-3"></div>
-            <div class="row px-3">
-              <div class="col-auto pb-3"><img class="img-fluid float-left"
-                  src='https://placehold.it/95x95/e74c3c?text=W-CRUISE' alt='some content' />
-              </div>
-              <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False Information on
-                  Coronavirus</h4>
-              </div>
+        </section>
+
+        <section class="page-bottom py-2">
+            <div class="magazine">
+                <h5 class="title pb-3 font-weight-bold text-center border-bottom"><span
+                        class="bg-danger text-white font-weight-bolder p-1 px-2 lead mr-1">N</span> IN THE MAGAZINE</h5>
+                <div class="row">
+                    <article class="col-md-3 mb-1">
+                        <a href="#" class="text-dark text-decoration-none">
+
+                            <div class="pb-0 position-relative">
+                                <span
+                                    class="last-magazine bg-nw-lightwhite p-2 px-2 text-negro font-weight-bolder position-absolute">MARCH
+                                    13 ISSUE</span>
+                                <img class="img-fluid d-none d-lg-block"
+                                    src="https://placehold.it/480x550/99ff33?text=Magazine" alt="some content">
+                                <img class="img-fluid d-block d-lg-none"
+                                    src="https://placehold.it/550x550/99ff33?text=Magazine" alt="some content">
+                            </div>
+                            <h4 class="featured issue font-weight-bolder pt-1 text-uppercase text-center">SEE ALL
+                                FEATURES</h4>
+                        </a>
+                    </article>
+                    <article class="col-md-3 mb-1">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <img class="img-fluid" src="https://placehold.it/767x750/00ff33?text=Magazine"
+                                alt="some content">
+                            <div class="pt-2 pb-0">
+                                <span
+                                    class="bg-danger p-1 px-2 text-white font-weight-bolder">FEATURES</span>&nbsp;<span
+                                    class="text-danger font-weight-bold"> U.S.</span>
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-1">Why Muslim Voters Love Bernie Sanders
+                            </h4>
+                        </a>
+                    </article>
+                    <article class="col-md-3 mb-1">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <img class="img-fluid" src="https://placehold.it/767x750/00ffcc?text=Magazine"
+                                alt="some content">
+                            <div class="pt-2 pb-0">
+                                <span
+                                    class="bg-danger p-1 px-2 text-white font-weight-bolder">PERSICOPE</span>&nbsp;<span
+                                    class="text-danger font-weight-bold"> World</span>
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-1">'Hitler's Pope' Archive May Shed More
+                                Light on Role of Vatican in WWII </h4>
+                        </a>
+                    </article>
+                    <article class="col-md-3 mb-1">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <img class="img-fluid" src="https://placehold.it/767x750/33ff99?text=Magazine"
+                                alt="some content">
+                            <div class="pt-2 pb-0">
+                                <span
+                                    class="bg-danger p-1 px-2 text-white font-weight-bolder">DOWNTIME</span>&nbsp;<span
+                                    class="text-danger font-weight-bold"> Culture</span>
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-1"> Best Stargazing Spots Around the Globe
+                            </h4>
+                        </a>
+                    </article>
+                    <article class="col-md-3 mb-1">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <img class="img-fluid" src="https://placehold.it/767x750/00cc99?text=Magazine"
+                                alt="some content">
+                            <div class="pt-2 pb-0">
+                                <span class="bg-danger p-1 px-2 text-white font-weight-bolder">COVER</span>&nbsp;<span
+                                    class="text-danger font-weight-bold"> Culture</span>
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-1">OK, Millennial: Boomers Are the
+                                Greatest Generation in History </h4>
+                        </a>
+                    </article>
+                    <article class="col-md-3 mb-1">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <img class="img-fluid" src="https://placehold.it/767x750/33cc33?text=Magazine"
+                                alt="some content">
+                            <div class="pt-2 pb-0">
+                                <span
+                                    class="bg-danger p-1 px-2 text-white font-weight-bolder">PERISCOPE</span>&nbsp;<span
+                                    class="text-danger font-weight-bold"> World</span>
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-1">Alt-Rock Legend Stephen Malkmus on His
+                                New Album and the Return of Pavement </h4>
+                        </a>
+                    </article>
+                    <article class="col-md-3 mb-1">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <img class="img-fluid" src="https://placehold.it/767x750/009999?text=Magazine"
+                                alt="some content">
+                            <div class="pt-2 pb-0">
+                                <span
+                                    class="bg-danger p-1 px-2 text-white font-weight-bolder">DOWNTIME</span>&nbsp;<span
+                                    class="text-danger font-weight-bold"> Culture</span>
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-1">Magic Won't Help Daniel Radcliffe in
+                                'Escape from Pretoria'</h4>
+                        </a>
+                    </article>
+                    <article class="col-md-3 mb-1">
+                        <a href="#" class="text-dark text-decoration-none">
+
+                            <div class="pb-0 position-relative">
+                                <span
+                                    class="last-magazine bg-danger p-1 px-2 text-white font-weight-bolder position-absolute">IN
+                                    FOCUS</span>
+                                <img class="img-fluid d-none d-lg-block"
+                                    src="https://placehold.it/480x550/006666?text=Magazine" alt="some content">
+                                <img class="img-fluid d-block d-lg-none"
+                                    src="https://placehold.it/550x550/006666?text=Magazine" alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-1 text-uppercase">Look Out Below!</h4>
+                        </a>
+                    </article>
+                </div>
             </div>
-            <div class="divisor col-11 border-top pt-3 mx-3"></div>
-            <div class="row px-3">
-              <div class="col-auto pb-3"><img class="img-fluid float-left"
-                  src='https://placehold.it/95x95/2471a3?text=W-JAILS' alt='some content' />
-              </div>
-              <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False Information on
-                  Coronavirus</h4>
-              </div>
+
+            <div class="editors">
+                <h5 class="title pb-3 font-weight-bold text-center border-bottom"><span
+                        class="bg-danger text-white font-weight-bolder p-1 px-2 lead mr-1">N</span> EDITOR'S PICK</h5>
+                <div class="row">
+                    <article class="col-md-6 col-lg-3">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                    POLITICS
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/00ffff?text=Editors-Picks"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                Rallies Over Coronavirus Concerns</h4>
+                        </a>
+                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum
+                            unde
+                            voluptas et ea architecto quae esse expedita.</p>
+                    </article>
+                    <article class="col-md-6 col-lg-3">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                    POLITICS
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/0040ff?text=Editors-Picks"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                Rallies Over Coronavirus Concerns</h4>
+                        </a>
+                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum
+                            unde
+                            voluptas et ea architecto quae esse expedita.</p>
+                    </article>
+                    <article class="col-md-6 col-lg-3">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                    POLITICS
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/868a08?text=Editors-Picks"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                Rallies Over Coronavirus Concerns</h4>
+                        </a>
+                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum
+                            unde
+                            voluptas et ea architecto quae esse expedita.</p>
+                    </article>
+                    <article class="col-md-6 col-lg-3">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                    POLITICS
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/d358f7?text=Editors-Picks"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                Rallies Over Coronavirus Concerns</h4>
+                        </a>
+                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum
+                            unde
+                            voluptas et ea architecto quae esse expedita.</p>
+                    </article>
+                    <article class="col-md-6 col-lg-3">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                    POLITICS
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/f6cef5?text=Editors-Picks"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                Rallies Over Coronavirus Concerns</h4>
+                        </a>
+                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum
+                            unde
+                            voluptas et ea architecto quae esse expedita.</p>
+                    </article>
+                    <article class="col-md-6 col-lg-3">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                    POLITICS
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/fa8258?text=Editors-Picks"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                Rallies Over Coronavirus Concerns</h4>
+                        </a>
+                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum
+                            unde
+                            voluptas et ea architecto quae esse expedita.</p>
+                    </article>
+                    <article class="col-md-6 col-lg-3">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                    POLITICS
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/f2f5a9?text=Editors-Picks"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                Rallies Over Coronavirus Concerns</h4>
+                        </a>
+                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum
+                            unde
+                            voluptas et ea architecto quae esse expedita.</p>
+                    </article>
+                    <article class="col-md-6 col-lg-3">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                    POLITICS
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/2efe2e?text=Editors-Picks"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                Rallies Over Coronavirus Concerns</h4>
+                        </a>
+                        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum
+                            unde
+                            voluptas et ea architecto quae esse expedita.</p>
+                    </article>
+                </div>
             </div>
-            <div class="divisor col-11 border-top pt-3 mx-3"></div>
-            <div class="row px-3">
-              <div class="col-auto pb-3"><img class="img-fluid float-left"
-                  src='https://placehold.it/95x95/7d3c98?text=W-EMERGENCY' alt='some content' />
-              </div>
-              <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False Information on
-                  Coronavirus</h4>
-              </div>
-            </div>
-            <div class="divisor col-11 border-top pt-3 mx-3"></div>
-            <div class="row px-3">
-              <div class="col-auto pb-3"><img class="img-fluid float-left"
-                  src='https://placehold.it/95x95/ff33ff?text=W-REBOOT' alt='some content' />
-              </div>
-              <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False Information on
-                  Coronavirus</h4>
-              </div>
-            </div>
-            <div class="divisor col-11 border-top pt-3 mx-3"></div>
-            <div class="row px-3">
-              <div class="col-auto pb-3"><img class="img-fluid float-left"
-                  src='https://placehold.it/95x95/666633?text=W-PANDEMIC' alt='some content' />
-              </div>
-              <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False Information on
-                  Coronavirus</h4>
-              </div>
-            </div>
-            <div class="divisor col-11 border-top pt-3 mx-3"></div>
-            <div class="row px-3">
-              <div class="col-auto pb-3"><img class="img-fluid float-left"
-                  src='https://placehold.it/95x95/148f77?text=W-TRACK' alt='some content' />
-              </div>
-              <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                <h4 class="lastests font-weight-bold">Leaked Norwegian Cruise Line Emails Show False Information on
-                  Coronavirus</h4>
-              </div>
-            </div>
-            <div class="w-100"></div>
-            <div class="row newsletter">
-              <div class="bg-light pl-3 pr-5 py-4 border justify-content-baseline">
-                <h5 class="nw-n title d-flex font-weight-bold align-items-center">
-                  <span class="bg-danger text-white font-weight-bolder p-2 px-2 lead float-left mr-1">N </span>
-                  SIGN UP FOR OUR NEWSLETTER
+
+            <div class="galleries">
+                <h5 class="title pb-3 font-weight-bold text-center border-bottom"><span
+                        class="bg-danger text-white font-weight-bolder p-1 px-2 lead mr-1">N</span> FEATURED SLIDESHOWS
                 </h5>
-                <a href="#" class="btn btn-secondary my-2 rounded-0">SIGN UP</a><a href="#"
-                  class="text-dark d-block "><small class="font-weight-bold">Update your preferences »</small></a>
-              </div>
+
+                <div class="row">
+                    <article class="col-md-4 mb-4">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
+                                    <div class=" border text-danger">
+                                        <div class="m-1 border px-1"> 15</div>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/bbdefb?text=Slideshow"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Relive the 'Star Wars' Saga at These
+                                Filming Locations </h4>
+                        </a>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
+                                    <div class=" border text-danger">
+                                        <div class="m-1 border px-1">11</div>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/64b5f6?text=Slideshow"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Inside the Last Bohemian Apartments
+                                of
+                                the Storied Hotel Chelsea </h4>
+                        </a>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
+                                    <div class=" border text-danger">
+                                        <div class="m-1 border px-1">8</div>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/1e88e5?text=Slideshow"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">The Great Alone: Walking the Pacific
+                                Crest Trail</h4>
+                        </a>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
+                                    <div class=" border text-danger">
+                                        <div class="m-1 border px-1">18</div>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/82b1ff?text=Slideshow"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Cruise the Galapagos While Conserving
+                                Wildlife Found Nowhere Else </h4>
+                        </a>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
+                                    <div class=" border text-danger">
+                                        <div class="m-1 border px-1">12</div>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/2979ff?text=Slideshow"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">The New Documentary Trying to Save
+                                the
+                                Most Trafficked Mammals in the World</h4>
+                        </a>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <div class="d-flex position-relative">
+                                <div
+                                    class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
+                                    <div class=" border text-danger">
+                                        <div class="m-1 border px-1">11</div>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="https://placehold.it/767x512/03a9f4?text=Slideshow"
+                                    alt="some content">
+                            </div>
+                            <h4 class="featured font-weight-bolder pt-3">Relive the 'Star Wars' Saga at These
+                                Filming Locations </h4>
+                        </a>
+                    </article>
+
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-bottom py-2">
-      <div class="magazine">
-        <h5 class="title pb-3 font-weight-bold text-center border-bottom"><span
-            class="bg-danger text-white font-weight-bolder p-1 px-2 lead mr-1">N</span> IN THE MAGAZINE</h5>
-        <div class="row">
-          <article class="col-md-3 mb-1">
-            <a href="#" class="text-dark text-decoration-none">
-
-              <div class="pb-0 position-relative">
-                <span
-                  class="last-magazine bg-nw-lightwhite p-2 px-2 text-negro font-weight-bolder position-absolute">MARCH
-                  13 ISSUE</span>
-                  <img class="img-fluid d-none d-lg-block" src="https://placehold.it/480x550/99ff33?text=Magazine" alt="some content">
-                  <img class="img-fluid d-block d-lg-none" src="https://placehold.it/550x550/99ff33?text=Magazine" alt="some content">
-              </div>
-              <h4 class="featured issue font-weight-bolder pt-1 text-uppercase text-center">SEE ALL FEATURES</h4>
-            </a>
-          </article>
-          <article class="col-md-3 mb-1">
-            <a href="#" class="text-dark text-decoration-none">
-              <img class="img-fluid" src="https://placehold.it/767x750/00ff33?text=Magazine" alt="some content">
-              <div class="pt-2 pb-0">
-                <span class="bg-danger p-1 px-2 text-white font-weight-bolder">FEATURES</span>&nbsp;<span
-                  class="text-danger font-weight-bold"> U.S.</span>
-              </div>
-              <h4 class="featured font-weight-bolder pt-1">Why Muslim Voters Love Bernie Sanders
-              </h4>
-            </a>
-          </article>
-          <article class="col-md-3 mb-1">
-            <a href="#" class="text-dark text-decoration-none">
-              <img class="img-fluid" src="https://placehold.it/767x750/00ffcc?text=Magazine" alt="some content">
-              <div class="pt-2 pb-0">
-                <span class="bg-danger p-1 px-2 text-white font-weight-bolder">PERSICOPE</span>&nbsp;<span
-                  class="text-danger font-weight-bold"> World</span>
-              </div>
-              <h4 class="featured font-weight-bolder pt-1">'Hitler's Pope' Archive May Shed More
-                Light on Role of Vatican in WWII </h4>
-            </a>
-          </article>
-          <article class="col-md-3 mb-1">
-            <a href="#" class="text-dark text-decoration-none">
-              <img class="img-fluid" src="https://placehold.it/767x750/33ff99?text=Magazine" alt="some content">
-              <div class="pt-2 pb-0">
-                <span class="bg-danger p-1 px-2 text-white font-weight-bolder">DOWNTIME</span>&nbsp;<span
-                  class="text-danger font-weight-bold"> Culture</span>
-              </div>
-              <h4 class="featured font-weight-bolder pt-1"> Best Stargazing Spots Around the Globe
-              </h4>
-            </a>
-          </article>
-          <article class="col-md-3 mb-1">
-            <a href="#" class="text-dark text-decoration-none">
-              <img class="img-fluid" src="https://placehold.it/767x750/00cc99?text=Magazine" alt="some content">
-              <div class="pt-2 pb-0">
-                <span class="bg-danger p-1 px-2 text-white font-weight-bolder">COVER</span>&nbsp;<span
-                  class="text-danger font-weight-bold"> Culture</span>
-              </div>
-              <h4 class="featured font-weight-bolder pt-1">OK, Millennial: Boomers Are the
-                Greatest Generation in History </h4>
-            </a>
-          </article>
-          <article class="col-md-3 mb-1">
-            <a href="#" class="text-dark text-decoration-none">
-              <img class="img-fluid" src="https://placehold.it/767x750/33cc33?text=Magazine" alt="some content">
-              <div class="pt-2 pb-0">
-                <span class="bg-danger p-1 px-2 text-white font-weight-bolder">PERISCOPE</span>&nbsp;<span
-                  class="text-danger font-weight-bold"> World</span>
-              </div>
-              <h4 class="featured font-weight-bolder pt-1">Alt-Rock Legend Stephen Malkmus on His
-                New Album and the Return of Pavement </h4>
-            </a>
-          </article>
-          <article class="col-md-3 mb-1">
-            <a href="#" class="text-dark text-decoration-none">
-              <img class="img-fluid" src="https://placehold.it/767x750/009999?text=Magazine" alt="some content">
-              <div class="pt-2 pb-0">
-                <span class="bg-danger p-1 px-2 text-white font-weight-bolder">DOWNTIME</span>&nbsp;<span
-                  class="text-danger font-weight-bold"> Culture</span>
-              </div>
-              <h4 class="featured font-weight-bolder pt-1">Magic Won't Help Daniel Radcliffe in
-                'Escape from Pretoria'</h4>
-            </a>
-          </article>
-          <article class="col-md-3 mb-1">
-            <a href="#" class="text-dark text-decoration-none">
-
-              <div class="pb-0 position-relative">
-                <span class="last-magazine bg-danger p-1 px-2 text-white font-weight-bolder position-absolute">IN
-                  FOCUS</span>
-                  <img class="img-fluid d-none d-lg-block" src="https://placehold.it/480x550/006666?text=Magazine" alt="some content">
-                  <img class="img-fluid d-block d-lg-none" src="https://placehold.it/550x550/006666?text=Magazine" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-1 text-uppercase">Look Out Below!</h4>
-            </a>
-          </article>
-        </div>
-      </div>
-
-      <div class="editors">
-        <h5 class="title pb-3 font-weight-bold text-center border-bottom"><span
-            class="bg-danger text-white font-weight-bolder p-1 px-2 lead mr-1">N</span> EDITOR'S PICK</h5>
-        <div class="row">
-          <article class="col-md-6 col-lg-3">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
+            <div class="picks">
+                <h5 class="title pt-3 font-weight-bold text-danger border-top">U.S.</h5>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/cd5c5c?text=Featured5"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel
+                                    Cleveland
+                                    Rallies Over Coronavirus Concerns</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/fa8072?text=Featured6"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">Could Boston Marathon Be Cancelled?
+                                    The Race Follows Other Events Cancelled</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/aed581?text=EUROPE' alt='some content' />
+                                </div>
+                                <div class="col-auto col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">Europe Is 'New China,' for Coronavirus
+                                        Outbreak, CDC
+                                        Director
+                                        Says</h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/e74c3c?text=SEATTLE' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">
+                                        U.S. to Beef Up Iraq Defenses After Attack from Iran, Which Has New Missile</h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/2471a3?text=DEATH' alt='some content' />
+                                </div>
+                                <div class="col-auto col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">Push to Keep Vladimir Putin President
+                                        Until 2036 Dubbed
+                                        'Shameful'</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/00ffff?text=Editors-Picks" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                Rallies Over Coronavirus Concerns</h4>
-            </a>
-            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-              voluptas et ea architecto quae esse expedita.</p>
-          </article>
-          <article class="col-md-6 col-lg-3">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
+                <h5 class="title pt-3 font-weight-bold text-danger border-top">World</h5>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/a2d9ce?text=Featured7"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                    Rallies Over Coronavirus Concerns</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/138d75?text=Featured8"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">Could Boston Marathon Be Cancelled?
+                                    The Race Follows Other Events Cancelled</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/a9dfbf?text=POPE' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">Pope Francis Urges Priests to Visit
+                                        Coronavirus Victims
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/f9e79f?text=KOREA' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">
+                                        Kim Jong Un Joins New Strike Drill, N. Korea Reveals 'Anti-Viral' Injection</h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/aab7b8?text=MEASURES' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">Italy Announces Restrictive Nationwide
+                                        Coronavirus
+                                        Lockdown
+                                        Measures</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/0040ff?text=Editors-Picks" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                Rallies Over Coronavirus Concerns</h4>
-            </a>
-            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-              voluptas et ea architecto quae esse expedita.</p>
-          </article>
-          <article class="col-md-6 col-lg-3">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
+                <h5 class="title pt-3 font-weight-bold text-danger border-top">Business</h5>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/c39bd3?text=Featured9"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">SoulCycle Announces $2,500 At-Home
+                                    Bike With Optional Equinox Membership</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/7d3c98?text=Featured10"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">Amazon Selling Its Cashier-less
+                                    Checkout Tech to 'Several' Companies</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/aed581?text=STAY' alt='some content' />
+                                </div>
+                                <div class="col-auto col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">How to Stay Sane In a Crazy Market</h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/e74c3c?text=FEDERAL' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">
+                                        Federal Reserve Announces 1st Emergency Rate Cut Amid Coronavirus Outbreak</h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/2471a3?text=DEALS' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">The Best 2020 March Deals and Sales in
+                                        Clothing, Travel,
+                                        Beauty and More</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/868a08?text=Editors-Picks" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                Rallies Over Coronavirus Concerns</h4>
-            </a>
-            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-              voluptas et ea architecto quae esse expedita.</p>
-          </article>
-          <article class="col-md-6 col-lg-3">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
+                <h5 class="title pt-3 font-weight-bold text-danger border-top">Tech & Science</h5>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <div class="d-flex position-relative">
+                                    <div
+                                        class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">
+                                        POLITICS
+                                    </div>
+                                    <img class="img-fluid" src="https://placehold.it/767x512/cd5c5c?text=Featured5"
+                                        alt="some content">
+                                </div>
+                                <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                    Rallies Over Coronavirus Concerns</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/fa8072?text=Featured6"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">Could Boston Marathon Be Cancelled?
+                                    The Race Follows Other Events Cancelled</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/aed581?text=EUROPE' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">Europe Is 'New China,' for Coronavirus
+                                        Outbreak, CDC
+                                        Director
+                                        Says</h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/e74c3c?text=SEATTLE' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">
+                                        U.S. to Beef Up Iraq Defenses After Attack from Iran, Which Has New Missile</h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/2471a3?text=DEATH' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">Push to Keep Vladimir Putin President
+                                        Until 2036 Dubbed
+                                        'Shameful'</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/d358f7?text=Editors-Picks" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                Rallies Over Coronavirus Concerns</h4>
-            </a>
-            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-              voluptas et ea architecto quae esse expedita.</p>
-          </article>
-          <article class="col-md-6 col-lg-3">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
+                <h5 class="title pt-3 font-weight-bold text-danger border-top">Culture</h5>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/a2d9ce?text=Featured7"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
+                                    Rallies Over Coronavirus Concerns</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/138d75?text=Featured8"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">Could Boston Marathon Be Cancelled?
+                                    The Race Follows Other Events Cancelled</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/a9dfbf?text=POPE' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">Pope Francis Urges Priests to Visit
+                                        Coronavirus Victims
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/f9e79f?text=KOREA' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">
+                                        Kim Jong Un Joins New Strike Drill, N. Korea Reveals 'Anti-Viral' Injection</h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/aab7b8?text=MEASURES' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">Italy Announces Restrictive Nationwide
+                                        Coronavirus
+                                        Lockdown
+                                        Measures</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/f6cef5?text=Editors-Picks" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                Rallies Over Coronavirus Concerns</h4>
-            </a>
-            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-              voluptas et ea architecto quae esse expedita.</p>
-          </article>
-          <article class="col-md-6 col-lg-3">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
+                <h5 class="title pt-3 font-weight-bold text-danger border-top">Sports</h5>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/c39bd3?text=Featured9"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">SoulCycle Announces $2,500 At-Home
+                                    Bike With Optional Equinox Membership</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 pb-3">
+                        <article>
+                            <a href="#" class="text-dark text-decoration-none">
+                                <img class="img-fluid" src="https://placehold.it/767x512/7d3c98?text=Featured10"
+                                    alt="some content">
+                                <h4 class="featured font-weight-bolder pt-3">Amazon Selling Its Cashier-less
+                                    Checkout Tech to 'Several' Companies</h4>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/aed581?text=STAY' alt='some content' />
+                                </div>
+                                <div class="col-auto col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">How to Stay Sane In a Crazy Market</h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/e74c3c?text=FEDERAL' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">
+                                        Federal Reserve Announces 1st Emergency Rate Cut Amid Coronavirus Outbreak</h4>
+                                </div>
+                            </div>
+                            <div class="divisor col-11 border-top pt-3 mx-3"></div>
+                            <div class="row px-3">
+                                <div class="col-auto pb-3"><img class="img-fluid float-left"
+                                        src='https://placehold.it/95x95/2471a3?text=DEALS' alt='some content' />
+                                </div>
+                                <div class="col-9 col-md-auto col-lg-8 ml-n3">
+                                    <h4 class="featured-2 font-weight-bolder">The Best 2020 March Deals and Sales in
+                                        Clothing, Travel,
+                                        Beauty and More</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/fa8258?text=Editors-Picks" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                Rallies Over Coronavirus Concerns</h4>
-            </a>
-            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-              voluptas et ea architecto quae esse expedita.</p>
-          </article>
-          <article class="col-md-6 col-lg-3">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
-                </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/f2f5a9?text=Editors-Picks" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                Rallies Over Coronavirus Concerns</h4>
-            </a>
-            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-              voluptas et ea architecto quae esse expedita.</p>
-          </article>
-          <article class="col-md-6 col-lg-3">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
-                </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/2efe2e?text=Editors-Picks" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                Rallies Over Coronavirus Concerns</h4>
-            </a>
-            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque illum unde
-              voluptas et ea architecto quae esse expedita.</p>
-          </article>
-        </div>
-      </div>
-
-      <div class="galleries">
-        <h5 class="title pb-3 font-weight-bold text-center border-bottom"><span
-            class="bg-danger text-white font-weight-bolder p-1 px-2 lead mr-1">N</span> FEATURED SLIDESHOWS</h5>
-
-        <div class="row">
-          <article class="col-md-4 mb-4">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger">
-                    <div class="m-1 border px-1"> 15</div>
-                  </div>
-                </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/bbdefb?text=Slideshow" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Relive the 'Star Wars' Saga at These
-                Filming Locations </h4>
-            </a>
-          </article>
-          <article class="col-md-4 mb-4">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger">
-                    <div class="m-1 border px-1">11</div>
-                  </div>
-                </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/64b5f6?text=Slideshow" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Inside the Last Bohemian Apartments
-                of
-                the Storied Hotel Chelsea </h4>
-            </a>
-          </article>
-          <article class="col-md-4 mb-4">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger">
-                    <div class="m-1 border px-1">8</div>
-                  </div>
-                </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/1e88e5?text=Slideshow" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">The Great Alone: Walking the Pacific
-                Crest Trail</h4>
-            </a>
-          </article>
-          <article class="col-md-4 mb-4">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger">
-                    <div class="m-1 border px-1">18</div>
-                  </div>
-                </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/82b1ff?text=Slideshow" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Cruise the Galapagos While Conserving
-                Wildlife Found Nowhere Else </h4>
-            </a>
-          </article>
-          <article class="col-md-4 mb-4">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger">
-                    <div class="m-1 border px-1">12</div>
-                  </div>
-                </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/2979ff?text=Slideshow" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">The New Documentary Trying to Save
-                the
-                Most Trafficked Mammals in the World</h4>
-            </a>
-          </article>
-          <article class="col-md-4 mb-4">
-            <a href="#" class="text-dark text-decoration-none">
-              <div class="d-flex position-relative">
-                <div class="category position-absolute bg-nw-lightwhite p-1 text-danger font-weight-bold px-2">
-                  <div class=" border text-danger">
-                    <div class="m-1 border px-1">11</div>
-                  </div>
-                </div>
-                <img class="img-fluid" src="https://placehold.it/767x512/03a9f4?text=Slideshow" alt="some content">
-              </div>
-              <h4 class="featured font-weight-bolder pt-3">Relive the 'Star Wars' Saga at These
-                Filming Locations </h4>
-            </a>
-          </article>
-
-        </div>
-      </div>
-      <div class="picks">
-        <h5 class="title pt-3 font-weight-bold text-danger border-top">U.S.</h5>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/cd5c5c?text=Featured5" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel
-                  Cleveland
-                  Rallies Over Coronavirus Concerns</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/fa8072?text=Featured6" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">Could Boston Marathon Be Cancelled?
-                  The Race Follows Other Events Cancelled</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col">
+            </div>
+        </section>
+        <div class="block bg-lightgray py-2 mx-n4"></div>
+        <section class="suscribe border-top pt-2">
             <div class="row">
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/aed581?text=EUROPE' alt='some content' />
+                <div class="col-lg-7 col-xl-8">
+                    <h5 class="title pt-3 font-weight-bold text-danger">Suscribe</h5>
+                    <div class="row px-3 py-4 bg-light">
+                        <div class="col-md-4 col-lg-7 col-xl-4 position-relative mx-auto w-50 pb-3 mx-md-0 px-md-2">
+                            <img src="https://placehold.it/170x227/bcaaa4?text=1-NEWSWEEK" alt="some content"><img
+                                class="overlapped position-absolute"
+                                src="https://placehold.it/170x227/00838f?text=2-NEWSWEEK" alt="some content">
+                        </div>
+                        <div class="col-md-8 col-lg-5 col-xl-8 pl-4 ml-lg-n5 ml-xl-0 text-center">
+                            <h4 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want
+                                to Read!</h4>
+                            <p>All Access + Weekly Delivery.<br />
+                                Choose A Membership That's Perfect for You!</p>
+                            <a href="#" class="btn btn-danger font-weight-bold my-2 rounded-0">SUSCRIBE</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-auto col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">Europe Is 'New China,' for Coronavirus Outbreak, CDC
-                    Director
-                    Says</h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/e74c3c?text=SEATTLE' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">
-                    U.S. to Beef Up Iraq Defenses After Attack from Iran, Which Has New Missile</h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/2471a3?text=DEATH' alt='some content' />
-                </div>
-                <div class="col-auto col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">Push to Keep Vladimir Putin President Until 2036 Dubbed
-                    'Shameful'</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h5 class="title pt-3 font-weight-bold text-danger border-top">World</h5>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/a2d9ce?text=Featured7" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                  Rallies Over Coronavirus Concerns</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/138d75?text=Featured8" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">Could Boston Marathon Be Cancelled?
-                  The Race Follows Other Events Cancelled</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/a9dfbf?text=POPE' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">Pope Francis Urges Priests to Visit Coronavirus Victims
-                  </h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/f9e79f?text=KOREA' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">
-                    Kim Jong Un Joins New Strike Drill, N. Korea Reveals 'Anti-Viral' Injection</h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/aab7b8?text=MEASURES' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">Italy Announces Restrictive Nationwide Coronavirus
-                    Lockdown
-                    Measures</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h5 class="title pt-3 font-weight-bold text-danger border-top">Business</h5>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/c39bd3?text=Featured9" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">SoulCycle Announces $2,500 At-Home
-                  Bike With Optional Equinox Membership</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/7d3c98?text=Featured10" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">Amazon Selling Its Cashier-less
-                  Checkout Tech to 'Several' Companies</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/aed581?text=STAY' alt='some content' />
-                </div>
-                <div class="col-auto col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">How to Stay Sane In a Crazy Market</h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/e74c3c?text=FEDERAL' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">
-                    Federal Reserve Announces 1st Emergency Rate Cut Amid Coronavirus Outbreak</h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/2471a3?text=DEALS' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">The Best 2020 March Deals and Sales in Clothing, Travel,
-                    Beauty and More</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h5 class="title pt-3 font-weight-bold text-danger border-top">Tech & Science</h5>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <div class="d-flex position-relative">
-                  <div class="category position-absolute bg-nw-lightwhite p-2 text-danger font-weight-bold">POLITICS
-                  </div>
-                  <img class="img-fluid" src="https://placehold.it/767x512/cd5c5c?text=Featured5" alt="some content">
-                </div>
-                <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                  Rallies Over Coronavirus Concerns</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/fa8072?text=Featured6" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">Could Boston Marathon Be Cancelled?
-                  The Race Follows Other Events Cancelled</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/aed581?text=EUROPE' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">Europe Is 'New China,' for Coronavirus Outbreak, CDC
-                    Director
-                    Says</h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/e74c3c?text=SEATTLE' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">
-                    U.S. to Beef Up Iraq Defenses After Attack from Iran, Which Has New Missile</h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/2471a3?text=DEATH' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">Push to Keep Vladimir Putin President Until 2036 Dubbed
-                    'Shameful'</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h5 class="title pt-3 font-weight-bold text-danger border-top">Culture</h5>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/a2d9ce?text=Featured7" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">Sanders and Biden Cancel Cleveland
-                  Rallies Over Coronavirus Concerns</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/138d75?text=Featured8" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">Could Boston Marathon Be Cancelled?
-                  The Race Follows Other Events Cancelled</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/a9dfbf?text=POPE' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">Pope Francis Urges Priests to Visit Coronavirus Victims
-                  </h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/f9e79f?text=KOREA' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">
-                    Kim Jong Un Joins New Strike Drill, N. Korea Reveals 'Anti-Viral' Injection</h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/aab7b8?text=MEASURES' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">Italy Announces Restrictive Nationwide Coronavirus
-                    Lockdown
-                    Measures</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <h5 class="title pt-3 font-weight-bold text-danger border-top">Sports</h5>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/c39bd3?text=Featured9" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">SoulCycle Announces $2,500 At-Home
-                  Bike With Optional Equinox Membership</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4 pb-3">
-            <article>
-              <a href="#" class="text-dark text-decoration-none">
-                <img class="img-fluid" src="https://placehold.it/767x512/7d3c98?text=Featured10" alt="some content">
-                <h4 class="featured font-weight-bolder pt-3">Amazon Selling Its Cashier-less
-                  Checkout Tech to 'Several' Companies</h4>
-              </a>
-            </article>
-          </div>
-          <div class="col">
-            <div class="row">
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/aed581?text=STAY' alt='some content' />
-                </div>
-                <div class="col-auto col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">How to Stay Sane In a Crazy Market</h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/e74c3c?text=FEDERAL' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">
-                    Federal Reserve Announces 1st Emergency Rate Cut Amid Coronavirus Outbreak</h4>
-                </div>
-              </div>
-              <div class="divisor col-11 border-top pt-3 mx-3"></div>
-              <div class="row px-3">
-                <div class="col-auto pb-3"><img class="img-fluid float-left"
-                    src='https://placehold.it/95x95/2471a3?text=DEALS' alt='some content' />
-                </div>
-                <div class="col-9 col-md-auto col-lg-8 ml-n3">
-                  <h4 class="featured-2 font-weight-bolder">The Best 2020 March Deals and Sales in Clothing, Travel,
-                    Beauty and More</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="block bg-lightgray py-2 mx-n4"></div>
-    <section class="suscribe border-top pt-2">
-      <div class="row">
-        <div class="col-lg-7 col-xl-8">
-          <h5 class="title pt-3 font-weight-bold text-danger">Suscribe</h5>
-          <div class="row px-3 py-4 bg-light">
-            <div class="col-md-4 col-lg-7 col-xl-4 position-relative mx-auto w-50 pb-3 mx-md-0 px-md-2">
-              <img src="https://placehold.it/170x227/bcaaa4?text=1-NEWSWEEK" alt="some content"><img
-                class="overlapped position-absolute" src="https://placehold.it/170x227/00838f?text=2-NEWSWEEK"
-                alt="some content">
-            </div>
-            <div class="col-md-8 col-lg-5 col-xl-8 pl-4 ml-lg-n5 ml-xl-0 text-center">
-              <h4 class="font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h4>
-              <p>All Access + Weekly Delivery.<br />
-                Choose A Membership That's Perfect for You!</p>
-              <a href="#" class="btn btn-danger font-weight-bold my-2 rounded-0">SUSCRIBE</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-5 col-xl-4">
-          <h5 class="title pt-3 font-weight-bold text-danger text-uppercase">Newsletter</h5>
-          <div class="row border align-items-center ml-lg-1">
-            <div class="col-md-3 col-lg-6 p-lg-0 m-lg-n2">
-              <img class="newsletter2 p-0 m-0 img-fluid d-block d-sm-none"
-                src="https://placehold.it/388x160/d50000?text=NEWSLETTER1" alt="some content">
-              <img class="newsletter2 p-0 m-0 img-fluid d-none d-sm-block d-md-none"
-                src="https://placehold.it/730x160/d50000?text=NEWSLETTER2" alt="some content">
-              <img class="newsletter2 p-0 m-0 img-fluid d-none d-md-block d-lg-none"
-                src="https://placehold.it/191x210/d50000?text=NEWSLETTER3" alt="some content">
-              <img class="newsletter2 p-0 m-0 img-fluid d-none d-lg-block d-xl-none"
-                src="https://placehold.it/188x313/d50000?text=NEWSLETTER4" alt="some content">
-              <img class="newsletter2 p-0 m-0 img-fluid d-none d-xl-block"
-                src="https://placehold.it/190x301/d50000?text=NEWSLETTER5" alt="some content">
+                <div class="col-lg-5 col-xl-4">
+                    <h5 class="title pt-3 font-weight-bold text-danger text-uppercase">Newsletter</h5>
+                    <div class="row border align-items-center ml-lg-1">
+                        <div class="col-md-3 col-lg-6 p-lg-0 m-lg-n2">
+                            <img class="newsletter2 p-0 m-0 img-fluid d-block d-sm-none"
+                                src="https://placehold.it/388x160/d50000?text=NEWSLETTER1" alt="some content">
+                            <img class="newsletter2 p-0 m-0 img-fluid d-none d-sm-block d-md-none"
+                                src="https://placehold.it/730x160/d50000?text=NEWSLETTER2" alt="some content">
+                            <img class="newsletter2 p-0 m-0 img-fluid d-none d-md-block d-lg-none"
+                                src="https://placehold.it/191x210/d50000?text=NEWSLETTER3" alt="some content">
+                            <img class="newsletter2 p-0 m-0 img-fluid d-none d-lg-block d-xl-none"
+                                src="https://placehold.it/188x313/d50000?text=NEWSLETTER4" alt="some content">
+                            <img class="newsletter2 p-0 m-0 img-fluid d-none d-xl-block"
+                                src="https://placehold.it/190x301/d50000?text=NEWSLETTER5" alt="some content">
+                        </div>
+                        <div class="col-md-9 col-lg-6 px-4 pt-4 text-center">
+                            <h4 class=" font-weight-bold">The Starting 5</h4>
+                            <p>Take back your inbox. Sign up for our newsletter and start making sense of the world
+                                around you.</p>
+                            <a href="#" class="btn btn-danger my-2 font-weight-bold rounded-0">SIGN UP</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-9 col-lg-6 px-4 pt-4 text-center">
-              <h4 class=" font-weight-bold">The Starting 5</h4>
-              <p>Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
-              <a href="#" class="btn btn-danger my-2 font-weight-bold rounded-0">SIGN UP</a>
+        </section>
+
+        <footer class="footer border border-light my-5">
+            <div class="row border-bottom pb-2">
+                <div class="col-md-10">
+                    <h6 class="footer-logo d-inline-block text-danger font-weight-bold">Newsweek </h6>
+                    <span class="text-secondary">&nbsp;&nbsp; © 2020 NEWSWEEK</span>
+                </div>
+                <ul class="nav col-md-2 pl-3 pl-md-0 align-self-end">
+                    <li><i class="fab fa-facebook-square px-1"></i></li>
+                    <li><i class="fab fa-twitter px-1"></i></li>
+                    <li><i class="fab fa-instagram px-1"></i></li>
+                    <li><i class="fab fa-tumblr px-1"></i></li>
+                    <li><i class="fab fa-linkedin-in px-1"></i></li>
+                </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <footer class="footer border border-light my-5">
-      <div class="row border-bottom pb-2">
-        <div class="col-md-10">
-          <h6 class="footer-logo d-inline-block text-danger font-weight-bold">Newsweek </h6>
-          <span class="text-secondary">&nbsp;&nbsp; © 2020 NEWSWEEK</span>
-        </div>
-        <ul class="nav col-md-2 pl-3 pl-md-0 align-self-end">
-          <li><i class="fab fa-facebook-square px-1"></i></li>
-          <li><i class="fab fa-twitter px-1"></i></li>
-          <li><i class="fab fa-instagram px-1"></i></li>
-          <li><i class="fab fa-tumblr px-1"></i></li>
-          <li><i class="fab fa-linkedin-in px-1"></i></li>
-        </ul>
-      </div>
+            <div class="row pt-2">
+                <nav class="nav">
+                    <a class="nav-link text-nw-lightgray font-weight-bold">Editions</a>
+                    <a class="nav-link text-secondary">U.S. Edition</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">日本</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Pakistan</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Polska</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">România</a>
+                </nav>
+            </div>
+            <div class="row">
+                <nav class="nav">
+                    <a class="nav-link text-secondary">About Us</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Corrections</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Contact Us</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Editorial Guidelines</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Advertise</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Copyright</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Terms & Conditions</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Privacy Policy</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Cookie Policy</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Terms of Sale</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Archive</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Announcements</a>
+                    <span class="border-left my-1 mt-2"></span>
+                    <a class="nav-link text-secondary">Consent preferences</a>
+                </nav>
+            </div>
+        </footer>
+    </div>
 
-      <div class="row pt-2">
-        <nav class="nav">
-          <a class="nav-link text-nw-lightgray font-weight-bold">Editions</a>
-          <a class="nav-link text-secondary">U.S. Edition</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">日本</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Pakistan</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Polska</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">România</a>
-        </nav>
-      </div>
-      <div class="row">
-        <nav class="nav">
-          <a class="nav-link text-secondary">About Us</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Corrections</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Contact Us</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Editorial Guidelines</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Advertise</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Copyright</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Terms & Conditions</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Privacy Policy</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Cookie Policy</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Terms of Sale</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Archive</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Announcements</a>
-          <span class="border-left my-1 mt-2"></span>
-          <a class="nav-link text-secondary">Consent preferences</a>
-        </nav>
-      </div>
-    </footer>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
