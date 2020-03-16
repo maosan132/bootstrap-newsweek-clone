@@ -18,6 +18,12 @@ p.info,
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+footer a {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  font-size: 14px;
+}
+
 .footer a:hover {
   cursor: pointer;
 }
@@ -35,12 +41,6 @@ p.info,
 
 .footer-logo {
   font-size: 3rem;
-}
-
-footer a {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1;
-  font-size: 14px;
 }
 
 #navbarContent li a,

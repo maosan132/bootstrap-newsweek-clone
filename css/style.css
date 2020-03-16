@@ -46,21 +46,28 @@ li.nav-li-separator {
 
 .main {
   max-width: 1250px;
-  z-index:98;
-  top: -74px
+  z-index: 98;
+  top: -74px;
 }
 
 .nav-hack {
-  z-index: 99
+  z-index: 99;
 }
 
 .white-hack {
   z-index: 100;
-  top:0;
+  top: 0;
+}
+
+.vs div {
+  width: 40px;
+  height: 40px;
+  font: bold 14px/40px "Roboto Condensed", sans-serif;
+  margin: 14px auto 18px;
 }
 
 .white-hack div div {
-  height:74px;
+  height: 74px;
 }
 
 .page-bottom,
@@ -100,13 +107,6 @@ footer {
 
 .debate-2-divisor {
   border-top: 4px solid #1c87fb;
-}
-
-.vs div {
-  width: 40px;
-  height: 40px;
-  font: bold 14px/40px "Roboto Condensed", sans-serif;
-  margin: 14px auto 18px;
 }
 
 .newsletter {
