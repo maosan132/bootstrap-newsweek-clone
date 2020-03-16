@@ -1,0 +1,23 @@
+img {
+  background-size: cover;
+  background-position: 50%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.avatar1,
+.debate1 {
+  height: 63px;
+  width: 63px;
+}
+
+.avatar2,
+.debate2 {
+  height: 63px;
+  width: 63px;
+}
+
+.newsletter2 {
+  background-size: cover;
+}

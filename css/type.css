@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+body,
+.related p,
+p.info,
+.culture .summary,
+.more-stories,
+.lastests,
+.featured-2 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+footer a {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  cursor: pointer;
+}
+
+.logo-mini,
+.logo-big,
+.footer-logo {
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: -2px;
+}
+
+.logo-mini {
+  font-size: 2em;
+}
+
+.footer-logo {
+  font-size: 3rem;
+}
+
+#navbarContent li a,
+#collapsingNavbar li a {
+  color: #000;
+  text-decoration: none;
+}
+
+#navbarContent li a:hover,
+#collapsingNavbar li a:hover {
+  color: #fff;
+  background: #000;
+}
+
+h4 {
+  line-height: 1;
+}
+
+.stories .summary {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.heading {
+  cursor: pointer;
+  font: 20px/22px "Lora", serif;
+}
+
+.more-stories {
+  letter-spacing: 1px;
+}
+
+.related p,
+.more-stories,
+.lastests,
+.featured-2 {
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+a h4:hover,
+.more-stories:hover {
+  text-decoration: underline #f72210;
+  cursor: pointer;
+}
+
+.featured {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.related p:hover,
+a.info:hover,
+.lastests:hover,
+#navbarNav li a:hover,
+.featured-2:hover {
+  color: #f00 !important;
+  cursor: pointer;
+}
+
